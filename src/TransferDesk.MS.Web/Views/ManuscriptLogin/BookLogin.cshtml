@@ -1,0 +1,313 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.ManuscriptBookLoginVM
+@using System.Diagnostics
+@using GridMvc.Html
+@using GridMvc.Sorting
+
+
+@{
+    ViewBag.Title = "Manuscript Login";
+    Layout = "~/Views/Shared/_CommanLayout.cshtml";
+}
+@Styles.Render("~/bundles/styles")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/ManuscriptLogin")
+@*<style>
+        .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+            padding: 5px;
+        }
+
+        .pagination {
+            margin: -10px 0;
+        }
+
+        .grid-header-title a {
+            color: black;
+        }
+
+        .highlight {
+            color: blue;
+        }
+
+
+        th {
+            paddding-right: 2em;
+        }
+
+            th a.asc:after, th a.desc:after {
+                position: relative;
+                left: .4em;
+            }
+
+        span {
+            font-weight: bold;
+        }
+    </style>*@
+
+<link href="~/Content/LoginPage.css" rel="stylesheet" />
+<link type="text/css" rel="Stylesheet" href="http://ajax.microsoft.com/ajax/jquery.ui/1.8.6/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<br />
+<br />
+<br />
+@Html.Raw(TempData["msg"])
+@using (Html.BeginForm("BookLogin", "ManuscriptLogin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(x => x.ID, new { id = "bookid" })
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table MetadataInfo">
+                <tbody>
+                    <tr>
+                        <td>Book Title<span class="asterik">* </span></td>
+                        <td>
+                            @Html.DropDownListFor(model => model.BookMasterId, new SelectList(Model.BookTitleList, "ID", "BookTitle"), "Select Book Title", new { @class = "form-control input-sm", id = "ddlBookTitle" })
+                        </td>
+                        <td>Chapter No.<span class="asterik">* </span></td>
+                        <td>
+                            @Html.TextBoxFor(x => x.ChapterNumber, new { @class = "form-control input-sm", placeholder = "Please, Enter Chapter Number" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FTP Path</td>
+                        <td>
+                            @*<input type="text" class="form-control input-sm" placeholder="Please, Select Book Title" id="txtFTPLink" readonly="readonly" />*@
+                            <div id="txtFTPLink"></div>
+                        </td>
+                        <td>GPU Information</td>
+                        <td>
+                            @*<input type="text" placeholder="Please, Select Book Title" class="form-control input-sm" id="txtGPUInformation" readonly="readonly" />*@
+                            <div id="txtGPUInformation" style="text-decoration: none; padding-left: 40px"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chapter Title<span class="asterik">* </span></td>
+                        <td>
+                            @Html.TextBoxFor(x => x.ChapterTitle, new { placeholder = "Please, Enter Chapter Title", @class = "form-control input-sm" })
+                        </td>
+                        <td>Page Count<span class="asterik">* </span></td>
+                        <td>
+                            @Html.TextBoxFor(x => x.PageCount, new { @class = "form-control input-sm", placeholder = "Please, Enter Page Count" })
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>Received Date<span class="asterik">* </span></td>
+                        <td>
+                            @Html.TextBoxFor(model => model.ReceivedDate, new { @class = "form-control input-sm", id = "ReceivedDateBook", placeholder = "dd/mm/yyyy", @Value = Model.ReceivedDate.ToShortDateString() })
+                        </td>
+                        <td>Requester Name<span class="asterik">* </span></td>
+                        <td>
+                            @Html.TextBoxFor(x => x.RequesterName, new { @class = "form-control input-sm", placeholder = "Please, Enter Requester Name" })
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Associate</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.AssociateName, new { @class = "form-control input-sm", placeholder = "Please, Enter Associate", id = "BookAssociateName" })
+                        </td>
+                        <td>Special Instruction</td>
+                        <td>
+                            @Html.TextAreaFor(model => model.SpecialInstruction, new { @class = "form-control input-sm", placeholder = "Please, Enter Special Instruction", id = "bookSpecialInstruction" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Service Type<span class="asterik">*</span>
+                        </td>
+                        <td>
+                            @Html.DropDownListFor(model => model.ServiceTypeID, new SelectList(Model.ServiceTypes, "ID", "Description"), "Select-Service Type", new { @class = "form-control input-sm" })
+                        </td>
+                        <td>Task<span class="asterik">* </span></td>
+                        <td>
+                            @Html.DropDownListFor(model => model.StatusMasterTaskID, new SelectList(Model.TaskList, "ID", "Description"), "Select-Task", new { @class = "form-control input-sm", id = "TaskID" })
+                            @Html.HiddenFor(x=>x.StatusMasterTaskID)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="right">
+                            <input type="submit" value="Login" id="btnBookLogin" class="btn btn-primary btn-sm" />
+                            <input type="reset" value="Reset" id="btnBookReset" class="btn btn-primary btn-sm" />
+                            <input type="button" value="Export To Excel" id="btnBookExporttoExcel" class="btn btn-primary btn-sm" data-target="#myBookModal" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    @Html.ValidationSummary("Following fields are mandatory:", new { @class = "alert alert-danger" })
+}
+
+<div id="myBookModal" class="modal fade" data-backdrop="static" data-dismiss="modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <b>Export To Excel</b>
+                <button type="button" class="close" data-dismiss="modal" name="ClosePopup" aria-hidden="true">&times;</button>
+            </div>
+            <div align="center" class="modal-body col-lg-12">
+                <table style="margin-left: 10px;">
+                    <tr>
+                        <td class="col-lg-2">
+                            <label style="padding-top: 5px;">From Date</label>
+                        </td>
+                        <td class="col-lg-4" style="padding-left: 25px">
+                            @Html.TextBox("FromDate", "", new { @class = "datepicker1", placeholder = "dd/mm/yyyy" })
+                        </td>
+                        <td class="col-lg-2" style="padding-left: 20px">
+                            <label style="padding-top: 5px;">To Date</label>
+                        </td>
+                        <td class="col-lg-4" style="padding-left: 10px">
+                            @Html.TextBox("ToDate", "", new { @class = "datepicker1", placeholder = "dd/mm/yyyy" })
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <div class="modal-footer">
+                    <button type="button" id="btnOk" class="btn btn-default btn-sm">Ok</button>
+                    <button type="button" id="btnClose" class="btn btn-default btn-sm" data-dismiss="modal" name="ClosePopup">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div id="AllOpenJobs"  style ="width: 100%; height: 170px; overflow:scroll; ">
+        <style>
+            .grid-wrap table thead {
+                white-space: nowrap;
+            }
+
+            .grid-wrap table tr td {
+                white-space: nowrap;
+                text-align: left;
+            }
+        </style>
+        @Html.Grid(Model.ManuscriptBookLoginedJobs).Named("AllOpenJobs").Columns(columns =>
+            {
+                columns.Add(x => x.BookTitle).Titled("Book Title").SetWidth("3%");
+                columns.Add(x => x.CrestID).Titled("Crest ID").SetWidth("5%");
+                columns.Add(x => x.ChapterNumber).Titled("Chapter Number").SetWidth("5%");
+                //columns.Add(x => x.FTPLink).Titled("FTP Path").SetWidth("8%");
+                //columns.Add(x => x.GPUInformation).Titled("GPU Information").SetWidth("10%");
+                columns.Add(x => x.ChapterTitle).Titled("Chapter Title");
+                columns.Add(x => x.PageCount).Titled("Page Count"); ;
+                //columns.Add(x => x.ReceivedDate).Format("{0:dd/MM/yyyy}").Titled("Received Date");
+                columns.Add(x => x.RequesterName).Titled("Requester Name");
+                columns.Add(x => x.Associate).Titled("Associate Name");
+                columns.Add(x => x.SpecialInstruction).Titled("Special Instruction");
+                columns.Add(x => x.ServiceType).Titled("Service Type");
+                columns.Add(x => x.Task).Titled("Task");
+                columns.Add().RenderValueAs(x => Html.ActionLink("Edit", "BookLogin", "BookLogin", new {id = x.ID, jobtype = "book"})).Titled("Action")
+                    //columns.Add(x => x.ReceivedDate).Format("{0:dd/MM/yyyy}").Titled("Received Date");
+                    //columns.Add(x => x.CreatedDate).Titled("Logged in date/time");
+                    //columns.Add(x => x.FetchedDate).Titled("Fetch date/time");
+                    //columns.Add(x => x.Age).Titled("Age (days)");
+                    //columns.Add(x => x.HandlingTime).Titled("Handling time")
+                    .Encoded(false).Sanitized(false);
+            }).Selectable(false).
+    </div>*@
+
+<table class="table-bordered table-striped table-hover loginJobs">
+    <thead>
+        <tr>
+            <th width="200px">
+                Book Title
+            </th>
+            <th width="105px">
+                Crest ID
+            </th>
+            <th width="250px">
+                Chapter Number
+            </th>
+            <th class="hide">
+                FTP Link
+            </th>
+            <th class="hide">
+                GPU Information
+            </th>
+            <th class="hide">
+                Chapter Title
+            </th>
+            <th class="hide">
+                Page Count
+            </th>
+            <th class="hide">
+                Received Date
+            </th>
+            <th class="hide">
+                Requester Name
+            </th>
+            <th width="170px">
+                Associate Name
+            </th>
+            <th width="300px">
+                Special Instruction
+            </th>
+            <th width="150px">
+                Service Type
+            </th>
+            <th class="hide">
+                Task
+            </th>
+            <th width="100px">
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ManuscriptBookLoginedJobs)
+        {
+            <tr>
+                <td style="display:none">
+                    @item.ID
+                </td>
+                <td width="174px">
+                    @item.BookTitle
+                </td>
+                <td width="96px">
+                    @item.CrestID
+                </td>
+                <td width="218px">
+                    @item.ChapterNumber
+                </td>
+                <td class="hide">
+                    @item.FTPLink
+                </td>
+                <td class="hide">
+                    @item.GPUInformation
+                </td>
+                <td class="hide">
+                    @item.ChapterTitle
+                </td>
+                <td class="hide">
+                    @item.PageCount
+                </td>
+                <td class="hide">
+                    @item.ReceivedDate
+                </td>
+                <td class="hide">
+                    @item.RequesterName
+                </td>
+                <td width="155px">
+                    @item.Associate
+                </td>
+                <td width="266px">
+                    @item.SpecialInstruction
+                </td>
+
+                <td width="135px">
+                    @item.ServiceType
+                </td>
+                <td class="hide">
+                    @item.Task
+                </td>
+                <td width="75px">
+                    <input type="button" id="btnEdit" class="btn btn-primary btn-sm editBookButton" style="line-height: normal;" value="Edit" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

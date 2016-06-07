@@ -1,0 +1,208 @@
+﻿@using System.ComponentModel.Design
+@using DocumentFormat.OpenXml.Vml.Spreadsheet
+@using GridMvc.Html
+@using GridMvc.Sorting
+@model TransferDesk.Services.Manuscript.ViewModel.AdminDasboardVM
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+@Scripts.Render("~/bundles/jquery")
+<script src="~/Scripts/gridmvc.js"></script>
+<script src="~/Scripts/gridmvc.lang.ru.js"></script>
+<link type="text/css" rel="Stylesheet" href="http://ajax.microsoft.com/ajax/jquery.ui/1.8.6/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="~/Content/Gridmvc.css" rel="stylesheet" />
+<link href="~/Content/AdminDashBoard.css" rel="stylesheet" />
+@Scripts.Render("~/bundles/AdminDashBoard")
+
+<style>
+    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+        padding: 5px;
+    }
+
+    .pagination {
+        margin: -10px 0;
+    }
+
+    .grid-header-title a {
+        color: black;
+    }
+
+    .highlight {
+        color: blue;
+    }
+
+
+    th {
+        paddding-right: 2em;
+    }
+
+        th a.asc:after, th a.desc:after {
+            position: relative;
+            left: .4em;
+        }
+
+    span {
+        font-weight: bold;
+    }
+</style>
+
+<div class="container-fluid" style="padding-left: 20px">
+    @Html.Raw(TempData["msg"])
+    <div class="main col-lg-12">
+        <div class="col-lg-4">
+            @using (Html.BeginForm("AdminDashBoard", "AdminDashBoard", FormMethod.Get))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(x => x.CrestIdVM)
+                @Html.HiddenFor(x => x.AssociateNameVM)
+                @Html.HiddenFor(x => x.JobProcessingStatusVM)
+                @Html.HiddenFor(x => x.RoleVM)
+                @Html.HiddenFor(x => x.ServiceTypeVM)
+                <div class="navbar navbar-fixed-top collapse navbar-collapse" style="background-color: whitesmoke;">
+                    <div style="height: 65px; width: 100%; padding-left: 150px;">
+                        <br />
+                        <div class="navbar-header">
+                            <p style="display: inline;">
+                                <img src="~/Images/Springer-Nature.jpg" width="250px" height="35px" style="margin-left: -70px" title="Springer Logo" />
+                                <span style="padding-left: 120px; font-size: 22px;">Manuscript Services</span>
+                                <span style="display: block; padding-left: 327px; font-size: 18px; margin-bottom: -20px;">Admin Dashboard</span>
+                                <span style="padding-left: 25px"></span>
+                            </p>
+                        </div>
+                        <div style="padding-top: 5px; margin-left: 40px">
+                            <input type="button" value="Export To Excel" id="btnExporttoExcel" class="btn btn-primary btn-sm" data-target="#myModal" style="width: 100px; padding-left: 7px;margin-left: 40px " />
+
+                            <input type="button" id="btnAllocateID" class="btn btn-primary btn-sm" value="Allocate ID" data-target="#AssociateNamesModal" readonly style="width: 80px; text-align: center" />@*style="background-color: cornflowerblue; width: 65px; height: 50px; margin-left:1px; white-space: normal"*@
+                            <style>
+                                #AssociateNamesModal > div.modal-dialog {
+                                    width: 300px;
+                                }
+
+                                .modal-backdrop {
+                                    position: static;
+                                }
+                            </style>
+
+                            <div id="AssociateNamesModal" class="modal fade" tabindex='-1' data-backdrop="static" data-dismiss="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <label>Allocate To Associate </label>
+                                            <button type="button" class="close" data-dismiss="modal" name="ClosePopup" aria-hidden="true">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-body" id="AssociateNameModal">
+                                                <input type="text" class="form-control input-sm" id="AssociateName" placeholder="Please, Enter Associate Name" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" id="btnOk" class="btn btn-default btn-sm">Ok</button>
+                                                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" name="ClosePopup">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" id="btnUnAllocateID" class="btn btn-primary btn-sm" value="Unallocate ID" style="width: 90px;text-align: center" />
+                            <input type="button" id="btnHoldId" class="btn btn-primary btn-sm" value="Hold ID" style="width: 60px; text-align: center" />
+                            <input type="button" id="btnSearch" class="btn btn-primary btn-sm" value="Search" style="width: 58px; padding-left: 9px; " />
+                            <input type="submit" id="btnRefresh" class="btn btn-primary btn-sm" value="Refresh" style="width: 60px; padding-left: 8px; " />
+                            <input type="button" id="btnLogout" class="btn btn-primary btn-sm" value="Logout" style="width: 60px; text-align: center" />
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div id="AllOpenJobs">
+        <style>
+            .grid-wrap table thead {
+                white-space: nowrap;
+            }
+
+            .grid-wrap table tr td {
+                white-space: nowrap;
+                text-align: left;
+            }
+        </style>
+        @Html.Grid(Model.jobsdetails).Named("AllOpenJobs").Columns(columns =>
+        {
+            columns.Add(x => x.SrNo).Titled("Sr. No.").SetWidth("3%");
+            columns.Add(x => x.CrestId).Titled("Crest ID").SetWidth("5%");
+            columns.Add(x => x.JobType).Titled("Job Type").SetWidth("5%");
+            columns.Add(x => x.ServiceType).Titled("Service Type").SetWidth("8%");
+            columns.Add(x => x.MSID).Titled("MSID/Chp No.").SetWidth("10%");
+            columns.Add(x => x.JournalBookName).Titled("Journal Name/Book title");
+            columns.Add(x => x.PageCount).Titled("Page Count"); ;
+            columns.Add(x => x.Name).Titled("Name");
+            columns.Add(x => x.Role);
+            columns.Add(x => x.Status);
+            columns.Add(x => x.Task);
+            columns.Add(x => x.Revision).Titled("Revision No.");
+            columns.Add(x => x.GroupNo).Titled("Group No.");
+            columns.Add(x => x.ReceivedDate).Format("{0:dd/MM/yyyy}").Titled("Received Date");
+            columns.Add(x => x.CreatedDate).Titled("Logged in date/time");
+            columns.Add(x => x.FetchedDate).Titled("Fetch date/time");
+            columns.Add(x => x.Age).Titled("Age (days)");
+            columns.Add(x => x.HandlingTime).Titled("Handling time")
+                .Encoded(false).Sanitized(false);
+        }).Sortable().Selectable(false)
+    </div>
+
+    <div class="container body-content">
+        <br />.
+        <br />
+        <footer>
+            <div class="col-md-11">
+                <p align="center"> Copyright &copy; @DateTime.Now.Year | Springer Nature</p>
+            </div>
+            <div class="col-md-1">
+                <p>MS v1.0.6</p>
+            </div>
+        </footer>
+    </div>
+</div>
+`
+
+<div id="myModal" class="modal fade " data-backdrop="static" data-dismiss="modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <b>Export To Excel</b>
+                <button type="button" class="close" data-dismiss="modal" name="ClosePopup" aria-hidden="true">&times;</button>
+            </div>
+            <div align="center" class="modal-body col-lg-12">
+                <table style="margin-left: 10px;">
+                    <tr>
+                        <td class="col-lg-2">
+                            <label style="padding-top: 5px;">From Date</label>
+                        </td>
+                        <td class="col-lg-4" style="padding-left: 25px">
+                            @Html.TextBox("FromDate", "", new { @class = "datepicker", placeholder = "dd/mm/yyyy" })
+                        </td>
+                        <td class="col-lg-2" style="padding-left: 20px">
+                            <label style="padding-top: 5px;">To Date</label>
+                        </td>
+                        <td class="col-lg-4" style="padding-left: 10px">
+                            @Html.TextBox("ToDate", "", new { @class = "datepicker", placeholder = "dd/mm/yyyy" })
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <div class="modal-footer">
+                    <button type="button" id="btnExportOk" class="btn btn-default btn-sm">Ok</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" name="ClosePopup">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript"> var AppPath = '@Url.Content("~/")' </script>
+

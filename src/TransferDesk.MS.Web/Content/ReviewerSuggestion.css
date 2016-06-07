@@ -1,0 +1,137 @@
+﻿
+    table.ReviewersDetails {
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+        table.ReviewersDetails > thead {
+            border: 1px solid #cccccc;
+            border-collapse: collapse;
+			font-weight:normal;
+        }
+		
+        table.ReviewersDetails thead >tr> th{
+			font-weight:normal;
+        } 
+        table.ReviewersDetails td {
+            border: 1px solid #cccccc;
+            border-collapse: collapse;
+            padding-bottom: 0em;
+        }
+
+    .form-group-ReviewerDetails {
+        margin-bottom: 10px;
+        margin-top: 15px;
+        width: 270px;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+	table.ReviewersDetails > tbody > tr td:nth-child(2) > div.form-group{
+		margin-left:5px;
+		width:290px;
+	}
+	
+	 table.ReviewersDetails > tbody > tr td:nth-child(3) >div.form-group {
+		 margin-left:5px;
+		width:300px;
+    }
+
+	 
+	table.ReviewersDetails > tbody > tr td:nth-child(4) >div.form-group {
+		margin-left:5px;
+		width:350px;
+    }
+
+    table.ReviewersDetails > tbody > tr td:nth-child(5) > div.form-group {
+		margin-left:5px;
+		width:350px;
+    }
+
+	 
+
+    table.ReviewersDetails > tbody > tr td:nth-child(1) > div.form-group-ReviewerDetails > input.form-control.input-sm {
+        float: right;
+        width: 195px;
+		margin-right:5px;
+    }
+
+    table.ReviewersDetails > tbody > tr td:nth-child(2) > div.form-group > input.form-control.input-sm {
+        float: right;
+        width: 195px;
+		margin-right:5px;
+    }
+
+    table.ReviewersDetails > tbody > tr td:nth-child(1) > div.form-group-ReviewerDetails > label {
+        width: 60px;
+        font-weight: 100;
+		margin-left:5px;
+    }
+
+	/*Email Link*/
+    table.ReviewersDetails > tbody > tr td:nth-child(3) > div.form-group > input.form-control.input-sm {
+        float: right;
+		width:245px;
+		margin-right:5px;
+    }
+
+    input#AreaOfExpertise.form-control.input-sm {
+        margin-top: 15px;
+    }
+
+	/*AreaOfExpertise*/
+    table.ReviewersDetails > tbody > tr td:nth-child(4) > input.form-control.input-sm {
+        /*float: right;
+		width:295px;*/
+		margin-right:5px;
+		margin-left:5px;
+    }
+
+	/*refernce link*/
+    table.ReviewersDetails > tbody > tr td:nth-child(5) > div.form-group > input.form-control.input-sm {
+        float: right;
+		width:295px;
+		margin-right:5px;
+    }
+
+    input#publication.form-control.input-sm {
+        width: 70px;
+        margin-top: 15px;
+    }
+    table.ReviewersDetails > thead > tr >th{
+        text-align:center;
+    } 
+
+    table.ReviewersDetails > tbody {
+        /*width: 1140px;*/
+        display: block;
+        /*overflow-y: scroll;*/
+        /*height:500px;*/
+        /*max-height: 560px;*/
+        height: auto !important;
+		/*overflow-x:scroll;*/
+    }
+
+    table.ReviewersDetails thead {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+
+	.dvReviewersDetail{
+		    width: 1140px;
+    overflow-y: auto;
+    max-height: 530px;
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+	}
+
+	
+#ListManuscriptErrorCategories {
+	border: 1px solid;
+	border-color: rgb(169, 169, 169);
+}

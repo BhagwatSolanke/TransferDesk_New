@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbTransferDeskServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dbTransferDeskServiceEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="pr_SearchMSDetails" ReturnType="Collection(dbTransferDeskServiceModel.pr_SearchMSDetails_Result)">
+      <Parameter Name="SelectedValue" Mode="In" Type="Int32" />
+      <Parameter Name="SearchBy" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pr_GetMSDetails" ReturnType="Collection(dbTransferDeskServiceModel.pr_GetMSDetails_Result)" />
+  </EntityContainer>
+  <ComplexType Name="pr_SearchMSDetails_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="JournalID" Nullable="false" />
+    <Property Type="String" Name="JournalTitle" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="MSID" Nullable="false" />
+    <Property Type="String" Name="ArticleTypeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="SectionName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="CorrespondingEditor" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="AssignedEditor" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="AssociateStartDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="AuthorName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Affillation" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="CorrespondingAuthor" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Crosscheck_iThenticateResult" Nullable="false" MaxLength="200" />
+    <Property Type="Decimal" Name="Highest_iThenticateResult" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="String" Name="English_Lang_check" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Crosscheck_iThenticateResultComments" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="English_Lang_checkComment" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Ethics_ComplianceComments" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Ethics_Compliance" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TransferFrom" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Remark" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Abstarct" Nullable="false" MaxLength="5000" />
+    <Property Type="Decimal" Name="AnalysisResult" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="DateTime" Name="AssociateSubmissionDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="AssociateTAT" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="QualityCheck" Nullable="true" />
+    <Property Type="DateTime" Name="QualityStartCheckDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ErrorCategory" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="ErrorCategoryDescription" Nullable="true" MaxLength="5000" />
+    <Property Type="DateTime" Name="QualityEndDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FinalSubmitDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="QualityTAT" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="pr_GetMSDetails_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="JournalID" Nullable="false" />
+    <Property Type="String" Name="JournalTitle" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="MSID" Nullable="false" />
+    <Property Type="String" Name="ArticleTypeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="SectionName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="CorrespondingEditor" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="AssignedEditor" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="AssociateStartDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="AuthorName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Affillation" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="CorrespondingAuthor" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Crosscheck_iThenticateResult" Nullable="false" MaxLength="200" />
+    <Property Type="Decimal" Name="Highest_iThenticateResult" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="String" Name="English_Lang_check" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Crosscheck_iThenticateResultComments" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="English_Lang_checkComment" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Ethics_ComplianceComments" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Ethics_Compliance" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TransferFrom" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Remark" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="Abstarct" Nullable="false" MaxLength="5000" />
+    <Property Type="Decimal" Name="AnalysisResult" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="DateTime" Name="AssociateSubmissionDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="AssociateTAT" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="QualityCheck" Nullable="true" />
+    <Property Type="DateTime" Name="QualityStartCheckDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ErrorCategory" Nullable="false" MaxLength="5000" />
+    <Property Type="String" Name="ErrorCategoryDescription" Nullable="true" MaxLength="5000" />
+    <Property Type="DateTime" Name="QualityEndDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FinalSubmitDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="QualityTAT" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

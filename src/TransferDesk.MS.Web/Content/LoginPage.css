@@ -1,0 +1,80 @@
+﻿.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border: none;
+}
+/*column width set*/
+.MetadataInfo td:nth-child(1) {
+	width: 13%;
+}
+/*.MetadataInfo td:nth-child(2){
+       width:37%;
+   }*/
+.MetadataInfo td:nth-child(3) {
+	width: 14%;
+}
+
+.MetadataInfo td:nth-child(4) {
+	width: 36%;
+}
+
+/*column control width set*/
+.MetadataInfo td:nth-child(2) select.input-sm {
+	width: 85%;
+}
+
+.MetadataInfo td:nth-child(2) input.form-control.input-sm {
+	width: 85%;
+}
+
+.MetadataInfo td:nth-child(2) textarea.form-control.input-sm {
+	width: 85%;
+	resize: none;
+}
+
+.MetadataInfo td:nth-child(4) select.input-sm {
+	width: 90%;
+	float: right;
+}
+
+.MetadataInfo td:nth-child(4) input.form-control.input-sm {
+	width: 90%;
+	float: right;
+}
+
+.MetadataInfo td:nth-child(4) textarea.form-control.input-sm {
+	width: 90%;
+	float: right;
+	resize: none;
+}
+
+table.loginJobs > tbody {
+	width: 100%;
+	display: block;
+	overflow-y: scroll;
+	max-height: 400px;
+	height: auto !important;
+	text-align: left;
+}
+
+table.loginJobs thead tr {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+	table.loginJobs thead tr th {
+		text-align: center;
+	}
+
+table.loginJobs > tbody > tr > td:last-child {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.input-sm {
+	text-align: left;
+}

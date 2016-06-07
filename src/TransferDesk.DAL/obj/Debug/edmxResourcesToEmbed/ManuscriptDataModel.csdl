@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbTransferDeskServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MS_details_Master1">
+    <Key>
+      <PropertyRef Name="MSdetailsMasterID" />
+    </Key>
+    <Property Name="MSdetailsMasterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JournalMasterID" Type="Int32" Nullable="false" />
+    <Property Name="MSID" Type="Int32" Nullable="false" />
+    <Property Name="ArticleTypeMasterID" Type="Int32" />
+    <Property Name="SectionMasterID" Type="Int32" />
+    <Property Name="CorrespondingEditor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AssignedEditor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AssociateStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RoleMasterID" Type="Int32" Nullable="false" />
+    <Property Name="UserMasterID" Type="Int32" Nullable="false" />
+    <Property Name="AuthorDetailsID" Type="Int32" Nullable="false" />
+    <Property Name="Crosscheck_iThenticateResult" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Highest_iThenticateResult" Type="Decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="English_Lang_check" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Crosscheck_iThenticateResultComments" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="English_Lang_checkComment" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ethics_ComplianceComments" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ethics_Compliance" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TransferFrom" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Abstarct" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnalysisResult" Type="Decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="AssociateSubmissionDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AssociateTAT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QualityCheck" Type="Boolean" />
+    <Property Name="QualityStartCheckDate" Type="DateTime" Precision="3" />
+    <Property Name="ErrorCategoryMasterID" Type="Int32" />
+    <Property Name="QualityEndDate" Type="DateTime" Precision="3" />
+    <Property Name="FinalSubmitDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QualityTAT" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="dbTransferDeskServiceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MS_details_Master1" EntityType="Self.MS_details_Master1" />
+  </EntityContainer>
+</Schema>

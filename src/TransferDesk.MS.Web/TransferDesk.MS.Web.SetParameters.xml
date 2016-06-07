@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/TransferDesk.MS.Web_deploy" />
+  <setParameter name="ManuscriptConnectionString-Web.config Connection String" value="Data Source=192.168.84.149;Initial Catalog=dbTransferDeskservice;User ID=sa; Password=admin@123" />
+  <setParameter name="dbTransferDeskServiceEntities-Web.config Connection String" value="metadata=res://*/ManuscriptDataModel.csdl|res://*/ManuscriptDataModel.ssdl|res://*/ManuscriptDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=192.168.84.149;initial catalog=dbTransferDeskService;user id=sa;password=admin@123;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+  <setParameter name="TransferDesk.DAL.Manuscript.DataContext.ManuscriptDBContext-Web.config Connection String" value="TransferDesk.DAL.Manuscript.DataContext.ManuscriptDBContext_ConnectionString" />
+</parameters>

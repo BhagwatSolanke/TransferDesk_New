@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbTransferDeskServiceModelStoreContainer" CdmEntityContainer="dbTransferDeskServiceEntities">
+    <EntitySetMapping Name="MS_details_Master1">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.MS_details_Master1">
+        <MappingFragment StoreEntitySet="MS_details_Master1">
+          <ScalarProperty Name="MSdetailsMasterID" ColumnName="MSdetailsMasterID" />
+          <ScalarProperty Name="JournalMasterID" ColumnName="JournalMasterID" />
+          <ScalarProperty Name="MSID" ColumnName="MSID" />
+          <ScalarProperty Name="ArticleTypeMasterID" ColumnName="ArticleTypeMasterID" />
+          <ScalarProperty Name="SectionMasterID" ColumnName="SectionMasterID" />
+          <ScalarProperty Name="CorrespondingEditor" ColumnName="CorrespondingEditor" />
+          <ScalarProperty Name="AssignedEditor" ColumnName="AssignedEditor" />
+          <ScalarProperty Name="AssociateStartDate" ColumnName="AssociateStartDate" />
+          <ScalarProperty Name="RoleMasterID" ColumnName="RoleMasterID" />
+          <ScalarProperty Name="UserMasterID" ColumnName="UserMasterID" />
+          <ScalarProperty Name="AuthorDetailsID" ColumnName="AuthorDetailsID" />
+          <ScalarProperty Name="Crosscheck_iThenticateResult" ColumnName="Crosscheck_iThenticateResult" />
+          <ScalarProperty Name="Highest_iThenticateResult" ColumnName="Highest_iThenticateResult" />
+          <ScalarProperty Name="English_Lang_check" ColumnName="English_Lang_check" />
+          <ScalarProperty Name="Crosscheck_iThenticateResultComments" ColumnName="Crosscheck_iThenticateResultComments" />
+          <ScalarProperty Name="English_Lang_checkComment" ColumnName="English_Lang_checkComment" />
+          <ScalarProperty Name="Ethics_ComplianceComments" ColumnName="Ethics_ComplianceComments" />
+          <ScalarProperty Name="Ethics_Compliance" ColumnName="Ethics_Compliance" />
+          <ScalarProperty Name="TransferFrom" ColumnName="TransferFrom" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Abstarct" ColumnName="Abstarct" />
+          <ScalarProperty Name="AnalysisResult" ColumnName="AnalysisResult" />
+          <ScalarProperty Name="AssociateSubmissionDate" ColumnName="AssociateSubmissionDate" />
+          <ScalarProperty Name="AssociateTAT" ColumnName="AssociateTAT" />
+          <ScalarProperty Name="QualityCheck" ColumnName="QualityCheck" />
+          <ScalarProperty Name="QualityStartCheckDate" ColumnName="QualityStartCheckDate" />
+          <ScalarProperty Name="ErrorCategoryMasterID" ColumnName="ErrorCategoryMasterID" />
+          <ScalarProperty Name="QualityEndDate" ColumnName="QualityEndDate" />
+          <ScalarProperty Name="FinalSubmitDate" ColumnName="FinalSubmitDate" />
+          <ScalarProperty Name="QualityTAT" ColumnName="QualityTAT" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

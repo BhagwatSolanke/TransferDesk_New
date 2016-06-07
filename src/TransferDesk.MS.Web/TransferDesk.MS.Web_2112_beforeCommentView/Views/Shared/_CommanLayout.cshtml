@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:whitesmoke;">
+        <div class="container">
+            <div class="navbar-header">
+                <p style="display:inline;">
+                    <a href="#">
+                        <img src="@Url.Content("~/Images/Springer-Nature.jpg")" , alt="Edit" />
+                    </a>   
+                    <span class="heading">Manuscript Screening</span>
+                    <span style="padding-left:80px"></span>
+                </p>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text" style="color:black">Hello, @System.Web.HttpContext.Current.User.Identity.Name.Replace("SPRINGER-SBM\\", "")!</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <br />
+        <hr />
+        <footer>
+            <p align="center"> Copyright&copy; @DateTime.Now.Year -Springer Nature</p>
+        </footer>
+    </div>
+</body>
+</html>

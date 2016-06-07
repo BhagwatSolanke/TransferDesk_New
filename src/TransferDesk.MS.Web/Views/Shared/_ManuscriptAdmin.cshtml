@@ -1,0 +1,135 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @Styles.Render("~/bundles/styles")
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript"> var AppPath = '@Url.Content("~/")' </script>
+    <style>
+        .colorpad {
+            color: black;
+            font-family: Arial;
+            font-size: 15px;
+        }
+
+        ul.nav a:hover {
+            color: white !important;
+            background-color: #b2b2b2;
+        }
+
+        ul.nav > li > a:hover, ul.nav > li > a:focus {
+            background-color: #b2b2b2;
+            color: white !important;
+        }
+
+        .nav .caret {
+            border-top-color: black;
+            border-bottom-color: black;
+        }
+
+
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        .dropdown-menu .sub-menu {
+            left: 100%;
+            position: absolute;
+            top: 0;
+            visibility: hidden;
+            margin-top: -1px;
+        }
+
+        .dropdown-menu li:hover .sub-menu {
+            visibility: visible;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .navbar .sub-menu:before {
+            border-bottom: 7px solid transparent;
+            border-left: none;
+            border-right: 7px solid rgba(0, 0, 0, 0.2);
+            border-top: 7px solid transparent;
+            left: -7px;
+            top: 10px;
+        }
+
+        .navbar .sub-menu:after {
+            border-top: 6px solid transparent;
+            border-left: none;
+            border-right: 6px solid #fff;
+            border-bottom: 6px solid transparent;
+            left: 10px;
+            top: 11px;
+            left: -6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top collapse navbar-collapse" style="background-color:whitesmoke;">
+        <div class="container" style="height:65px;">
+            <br />
+            <div class="navbar-header">
+                <p style="display:inline;">
+                    <img src="~/Images/Springer-Nature.jpg" width="250px" height="35px" title="Springer Logo" />
+                    <span class="heading" style="padding-left:200px">Manuscript Service</span>
+                    <span style="padding-left:50px"></span>
+                </p>
+            </div>
+            <div class="navbar">
+                <ul class="nav nav-pills">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" style="color: black;" class="dropdown-toggle">Admin <b class="caret"></b></a>
+                        <ul class="dropdown-menu" id="menu1">
+                            <li>
+                                <a href="#">Journal</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li>@Html.ActionLink("Journal Master", "JournalMaster", "Admin")</li>
+                                    <li>@Html.ActionLink("Journal ArticleType", "JournalArticleTypes", "Admin")</li>
+                                    <li>@Html.ActionLink("Journal SectionType", "JournalSectionTypes", "Admin")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Book Master", "BookMaster", "Admin")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("User Roles", "UserRole", "UserRole")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <br /><br /><br /><br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+        <div class="col-md-11">
+            <p align="center"> Copyright &copy; @DateTime.Now.Year | Springer Nature</p>
+        </div>
+        <div class="col-md-1">
+            <p>MS v1.0.7</p>
+        </div>
+    </footer>
+</body>
+</html>

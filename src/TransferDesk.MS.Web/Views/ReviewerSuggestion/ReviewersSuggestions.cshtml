@@ -1,0 +1,263 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.ReviewerSuggestionVM
+@{
+    ViewBag.Title = "ReviewersSuggetions";
+    Layout = "~/Views/Shared/_ReviewerSuggetion.cshtml";
+}
+
+@Styles.Render("~/bundles/styles")
+@Scripts.Render("~/bundles/jquery")
+<link href="~/Content/ReviewerSuggestion.css" rel="stylesheet" />
+
+<br />
+<br />
+<br />
+@Html.Raw(TempData["MSIDError"])
+@using (Html.BeginForm("ReviewersSuggestions", "ReviewerSuggestion", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(x => x.ID)
+    @Html.HiddenFor(x => x.IsAssociateFinalSubmit, new { id = "hdnIsAssociateFinalSubmit" })
+    @Html.HiddenFor(x => x.IsQualityFinalSubmit, new { id = "hdnIsQualityFinalSubmit" })
+    @Html.HiddenFor(x => x.AnalystUserID)
+    <table width="100%">
+        <tr>
+            <td align="left">
+                Start Date
+            </td>
+            <td align="left">
+                @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control input-sm", placeholder = "dd/mm/yyyy", @readonly = "readonly", @Value = Model.StartDate.HasValue ? Model.StartDate.Value.ToShortDateString() : "" })
+            </td>
+            <td>
+                Task<span class="asterik">*</span>
+            </td>
+            <td>
+                @Html.DropDownListFor(x => x.SMTaskID, new SelectList(ViewBag.TaskIDList, "ID", "Description"), "Select-Task", new { @class = "form-control input-sm", id = "ddlTaskID" })
+            </td>
+            <td>
+                @System.Web.HttpContext.Current.User.Identity.Name.Replace("SPRINGER-SBM\\", "")
+            </td>
+            <td align="right" width="136px">
+                Role&nbsp;&nbsp;&nbsp;
+            </td>
+            <td align="right" width="208px">
+                @Html.DropDownListFor(x => x.RoleID, new SelectList(ViewBag.RoleList, "ID", "RoleName"), new { @class = "form-control input-sm", id = "ddlRole" })
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <div class="titles"><span><b>Manuscript Details</b></span></div>
+    <table width="100%">
+        <tr>
+            <td>
+                Journal Title
+                <span class="asterik">* </span>
+            </td>
+            <td>
+                @Html.DropDownListFor(x => x.JournalID, new SelectList(ViewBag.JournalList, "ID", "JournalTitle"), "Select-Journal Title", new { @class = "form-control input-sm", id = "ddlJournalTitle", style = "width:250px" })
+            </td>
+            <td>
+                Manuscript Number
+                <span class="asterik">*</span>
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.MSID, new { @class = "form-control input-sm", placeholder = "Enter Manuscript Number", style = "width:250px" })
+            </td>
+            <td align="right">
+                <span>Article Title<span class="asterik">*</span> </span>
+            </td>
+            <td align="right">
+                @Html.TextBoxFor(x => x.ArticleTitle, new { @class = "form-control input-sm", placeholder = "Enter Article Title", style = "width:250px", title = @Model.ArticleTitle })
+            </td>
+    </table>
+    <hr />
+    <div class="titles"><span><b>Reviewer(s) Details</b></span></div>
+    <div class="dvReviewersDetail">
+        <table width="100%" class="ReviewersDetails">
+            <thead style="background-color:whitesmoke; ">
+                <tr>
+                    <th width="273px">
+                        Reviewers Name
+                    </th>
+                    <th width="298px">
+                        Affiliation
+                    </th>
+                    <th width="308px">
+                        Email Address
+                    </th>
+                    <th width="221px">
+                        Area of Expertise
+                    </th>
+                    <th width="358px">
+                        Reference Links
+                    </th>
+                    <th width="73px">
+                        Publications
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ int count = 0; }
+                @foreach (var reviewerInfo in Model.MSIDReviewersVM)
+                {
+                    <tr>
+                        <td>
+                            @Html.Hidden("reviewerID", reviewerInfo.ID)
+                            <div class="form-group-ReviewerDetails" style="margin-bottom:25px">
+                                <label><span>@Convert.ToString(++count)<span>.Title</span><span class="asterik">*</span></span></label>
+                                @Html.TextBox("Title", reviewerInfo.Initials, new { @class = "form-control input-sm", placeholder = "Enter Title", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group-ReviewerDetails">
+                                <label>Last Name<span class="asterik">*</span></label>
+                                @Html.TextBox("LastName", reviewerInfo.LastName, new { @class = "form-control input-sm", placeholder = "Enter Last Name", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group-ReviewerDetails">
+                                <label>Given Name<span class="asterik">*</span></label>
+                                @Html.TextBox("GivenName", reviewerInfo.FirstName, new { @class = "form-control input-sm", placeholder = "Enter First Name", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group-ReviewerDetails">
+                                <label>Middle Name</label>
+                                @Html.TextBox("MiddleName", reviewerInfo.MiddleName, new { @class = "form-control input-sm", placeholder = "Enter Middle Name", @readonly = "readonly" })
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <span>Institution<span class="asterik">*</span></span>
+                                @Html.TextBox("Institution", reviewerInfo.Institution, new { @class = "form-control input-sm", placeholder = "Enter Institution", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group" style="margin-bottom:40px">
+                                <span>Department</span>
+                                @Html.TextBox("Department", reviewerInfo.Department, new { @class = "form-control input-sm", placeholder = "Enter Department", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group" style="margin-bottom:40px">
+                                <span>Street Name</span>
+                                @Html.TextBox("StreetName", reviewerInfo.StreetName, new { @class = "form-control input-sm", placeholder = "Enter Street Name", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group" style="margin-bottom:40px">
+                                <span>City<span class="asterik">*</span></span>
+                                @Html.TextBox("City", reviewerInfo.City, new { @class = "form-control input-sm", placeholder = "Enter City", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                <span>Country<span class="asterik">*</span></span>
+                                @Html.TextBox("Country", reviewerInfo.Country, new { @class = "form-control input-sm", placeholder = "Enter Country", @readonly = "readonly" })
+                            </div>
+                        </td>
+                        <td>
+                            @for (var i = 0; i < reviewerInfo.EmailAddress.Count; i++)
+                            {
+                                <div class="form-group">
+                                    <span>Email</span>
+                                    @if (i == 0)
+                                    {
+                                        <span class="asterik">*</span>
+                                    }
+                                    @Html.TextBox("Email", reviewerInfo.EmailAddress[i].Email.ToString(), new { @class = "form-control input-sm", placeholder = "Enter Email", @readonly = "readonly" })
+                                </div>
+                            }
+                        </td>
+                        <td>
+                            @for (var i = 0; i < reviewerInfo.AreaOfExpertise.Count; i++)
+                            {
+                                @Html.TextBox("AreaOfExpertise", reviewerInfo.AreaOfExpertise[i].AreaOfExpertice.ToString(), new { @class = "form-control input-sm", placeholder = "Enter AreaOfExpertise", style = "", @readonly = "readonly" })
+                            }
+                        </td>
+                        <td>
+                            @for (var i = 0; i < reviewerInfo.ReferenceLinks.Count; i++)
+                            {
+                                <div class="form-group">
+                                    <span>Link</span>
+                                    @if (i == 0)
+                                    {
+                                         @Convert.ToString(1) <span class="asterik">*</span>
+                                    }
+                                    else
+                                    { @Convert.ToString(i+1)}
+                                    <a href=@reviewerInfo.ReferenceLinks[i].Link target="_blank" style="word-wrap: break-word;text-decoration: underline;">@reviewerInfo.ReferenceLinks[i].Link</a>                                    
+                                </div>
+                            }
+                        </td>
+                        <td style="text-align:center">
+                            <div class="form-group">
+                                @Html.TextBox("publication", reviewerInfo.NoOfPublication, new { @class = "form-control input-sm", placeholder = "Enter publication", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.ActionLink("UnAssign", "UnAssignReviewer", "ReviewerSuggestion", new { reviewerInfoID = reviewerInfo.ID, msReviewersSuggestionID = Model.ID }, new { style = "text-decoration: underline;", @class = "unBind" })
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <br />
+    @Html.ValidationSummary("Following fields are mandatory:", new { @class = "alert alert-danger" })
+    <div>Reviewers Suggestions Mandatory Fields<span class="asterik">*</span></div>
+    
+    <hr id="hrUpQualityAnalyst" />
+    <div id="divQualityAnalyst" style="" width="100%">
+        <div class="titles"><span><b>Quality Analyst</b></span></div>
+        <table width="100%">
+            <tr>
+                <td width="168px">
+                    <span>Quality Check</span>
+                </td>
+                <td width="214px">
+                    @Html.DropDownListFor(x => x.QualityCheck, new SelectList(new List<Object>{
+                       new { value = "False" , text = "No"  },
+                       new { value = "True" , text = "Yes" }
+                    }, "value", "text"), new { @class = "form-control input-sm" })
+                </td>
+                <td align="right" width="154px">
+                    <span>Quality Check Date</span>
+                </td>
+                <td width="214px" style="padding-left:1.6em">
+                    @Html.TextBoxFor(x => x.QualityStartCheckDate, new { @class = "form-control input-sm", placeholder = "dd/mm/yyyy" })
+                </td>
+                <td align="center" style="padding-left: 7px;" width="175px">
+                    <span>Accurate</span>
+                </td>
+                <td style="float:right" width="210">
+                    @Html.DropDownListFor(x => x.Accurate, new SelectList(new List<Object>{
+                       new { value = "False" , text = "No"  },
+                       new { value = "True" , text = "Yes" }
+                    }, "value", "text"), new { @class = "form-control input-sm", id = "ddlAccurate" })
+                </td>
+            </tr>
+            <tr>
+                <td width="168px" align="left">
+                    <span>Error Category</span>
+                </td>
+                <td width="214px" colspan="3">
+                    <div id="ListManuscriptErrorCategories">
+                     
+                        @for (var i = 0; i < Model.ListManuscriptErrorCategoriesVM.Count; i++)
+                        {
+                            <div style="display:inline-block;">
+                                @Html.HiddenFor(x => x.ListManuscriptErrorCategoriesVM[i].ID)
+                                @Html.HiddenFor(x => x.ListManuscriptErrorCategoriesVM[i].ErrorCategoryID)
+                                @Html.CheckBoxFor(x => x.ListManuscriptErrorCategoriesVM[i].IsSelected, new { @class = "chkQualityCheck" })
+                            </div>
+                            <div style="display:inline-block;">
+                                @Html.DisplayFor(x => x.ListManuscriptErrorCategoriesVM[i].ErrorCategoryName)
+                            </div>
+                            <br />
+                        }
+                    </div>
+                </td>
+                <td align="right" width="154px">
+                    <span> Error Description  </span>
+                </td>
+                <td align="left" style="padding-left:1.6em">
+                    @Html.TextAreaFor(x => x.ErrorDescription, new { cols = "50" })
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" align="right" style="vertical-align:bottom">
+                    <input type="submit" id="btnQualitySave" name="QualityCommand" value="Save" class="btn btn-primary btn-sm" />
+                    <input type="submit" id="btnIsQualityFinalSubmit" name="QualityCommand" value="Submit" class="btn btn-primary btn-sm" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <a href="#" id="scroll-up" style="display: none;"></a>
+}
+@Scripts.Render("~/bundles/ReviewerSuggestion")

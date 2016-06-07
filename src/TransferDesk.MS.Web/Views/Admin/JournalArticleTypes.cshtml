@@ -1,0 +1,152 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.JournalArticleTypeVM
+
+@{
+    ViewBag.Title = "JournalArticleTypes";
+    Layout = "~/Views/Shared/_ManuscriptAdmin.cshtml";
+}
+
+@Scripts.Render("~/bundles/JournalArticleType")
+<style type="text/css">
+    .row {
+        margin-top: 10px;
+    }
+
+    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+        padding: 5px;
+    }
+
+    .col-lg-4 {
+        padding: 0px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .datamargin {
+        margin-top: 10px;
+    }
+
+    tbody {
+        width: 1100px;
+        display: block;
+        overflow-y: scroll;
+        height: 350px;
+    }
+
+    thead {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    body {
+        padding: 10px;
+    }
+</style>
+<br /><br />
+
+<h3 style="padding-left:22px;text-decoration:underline;">Journal Article Type</h3>
+<div class="container-fluid" style="padding-left:20px">
+    @Html.Raw(TempData["msg"])
+    <div class="main col-lg-12">
+
+        @using (Html.BeginForm("JournalArticleTypes", "Admin", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @*@Html.HiddenFor(x => x.JournalID)*@
+            @*@Html.HiddenFor(x => x.)*@
+            @Html.HiddenFor(x => x.ID)
+            @Html.HiddenFor(y => y.JournalTitleName)
+            @Html.HiddenFor(x => x.ArticleTypeID)
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-4">
+                        Journal Title
+                        @*<span class="asterik">* </span>*@
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.DropDownListFor(x => x.JournalID, new SelectList(ViewBag.JournalList, "ID", "JournalTitle"), "Select-Journal Title", new { @class = "form-control input-sm", id = "ddlJournalTitle" })
+                        @Html.ValidationMessageFor(x => x.JournalID, "", new { style = "color:red" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        Article Type
+                        <span class="asterik">* </span>
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.ArticleTypeName, new { @class = "form-control input-sm", placeholder = "Enter Article Type" })
+                        @Html.ValidationMessageFor(x => x.ArticleTypeName, "", new { style = "color:red" })
+
+                    </div>
+                </div>
+                <div class="row" id="dvIsActive">
+                    <div class="col-lg-4">
+                        IsActive
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.CheckBoxFor(x => x.IsActive)
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;padding-right:2em">
+                    <div class="col-lg-12" style="padding-bottom:20px;">
+                        <input type="submit" id="btnAdd" class="btn btn-primary btn-sm" value="Add" />
+                        <input type="button" value="Reset" id="btnReset" class="btn btn-primary btn-sm" />
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+    <div class="col-lg-4" style="width:100%">
+        <table class="table table-bordered table-striped table-hover " style="margin-top: 20px; width: 1104px;">
+            <thead>
+                <tr>
+                    @*<th>
+                          ID
+                        </th>*@
+                    <th style="width:695px;">
+                        Journal Title
+                    </th>
+                    <th style="width: 492px;">
+                        Article Type
+                    </th>
+                    <th style="width: 123px;">
+                        Active
+                    </th>
+                    <th style="width: 165px;">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var data in Model.details)
+            {
+                <tr>
+                    <td style="display:none ">@data.ID</td>
+                    <td style="display:none ">@data.JrID</td>
+                    <td style="width: 745px;">
+                        @data.JrTitle
+                    </td>
+                    <td style="width: 500px;">@data.ArticleNameValue</td>
+                    <td align="center" width="150px">
+                        @Html.CheckBox("IsActive", @data.IsActive, new { disabled = "disabled" })
+                    </td>
+                    <td width="150px" align="center">
+                        <input type="button" id="btnEdit" class="btn btn-primary btn-sm editButton" style="line-height: normal;" value="Edit" />
+                    </td>
+                    <td style="display:none ">@data.ArticleTypeID</td>
+                </tr>
+            }
+        </table>
+
+
+    </div>
+
+</div>
+
+
+
+
+

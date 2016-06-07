@@ -1,0 +1,368 @@
+﻿body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+	max-width: 280px;
+}*/
+
+.modal-dialog {
+	width: 900px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.form-control {
+	width: 208px;
+}
+
+td {
+	padding-bottom: .5em;
+	vertical-align: top;
+}
+/*Partial view scroll bar */
+#myPartialViewDiv {
+	height: 300px;
+	overflow-y: auto;
+}
+/*Tab space*/
+.tab {
+	padding-left: 3.5em;
+}
+
+/*layout navbar heading style*/
+.heading {
+	padding-left: 135px;
+	font-family: Arial;
+	font-size: 25px;
+}
+
+img {
+	vertical-align: top;
+}
+
+.searchFont {
+	font-size: 14px;
+}
+
+.searchControl-size {
+	width: 150px;
+}
+
+.titles {
+	font-size: 18px;
+	font-family: arial;
+	padding-bottom: 0.5em;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+td.width {
+	width: 163px;
+}
+
+.asterik {
+	color: red;
+	font-weight: bold;
+}
+
+AuthorEditbtn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.modal.modal-wide .modal-dialog {
+	width: 90%;
+}
+
+.modal-wide .modal-body {
+	overflow-y: auto;
+}
+
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+	padding: 5px;
+}
+
+.tWidth {
+	width: 100%;
+}
+
+	.tWidth td:first-child {
+		width: 168px;
+	}
+
+	.tWidth td:last-child {
+		text-align: right;
+		vertical-align: middle;
+		float: right;
+	}
+
+
+	.tWidth td:nth-child(2) {
+		width: 234px;
+	}
+
+	.tWidth td:nth-child(3) {
+		width: 146px;
+		text-align: left;
+	}
+
+	.tWidth td:nth-child(4) {
+		width: 210px;
+	}
+
+	.tWidth td:nth-child(5) {
+		width: 172px;
+		text-align: left;
+		padding-left: 1.4em;
+	}
+
+	.tWidth td:nth-child(6) {
+		width: 210px;
+	}
+
+
+#ui-datepicker-div {
+	display: none;
+}
+
+
+a.dd-selected {
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 1.428571429;
+	color: #555555;
+	font-weight: normal;
+}
+
+#dvOtherAuthor {
+	overflow-y: auto;
+	height: 80px;
+	width: 100%;
+	border: 1px solid #cccccc;
+}
+
+#ListManuscriptErrorCategoriesVM {
+	border: 1px solid;
+	border-color: rgb(169, 169, 169);
+	width: 208px;
+}
+
+#ErrorDescription {
+	overflow-y: scroll;
+	height: 242px;
+	resize: none;
+	width: 208px;
+}
+
+.tWidth table#tblOtherAuthors {
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+
+#tblOtherAuthorsbody td:last-child {
+	width: 51%;
+	float: left;
+	text-align: center;
+}
+
+#tblOtherAuthorsbody td:first-child {
+	width: 49%;
+	float: left;
+	text-align: center;
+}
+
+#tblOtherAuthorsbody.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+	padding: 0px;
+}
+
+#tblOtherAuthorsbody.table tbody > tr > td > input.form-control {
+	border-radius: 0px;
+}
+
+#tblOtherAuthors thead > tr > th {
+	text-align: center;
+}
+
+#tblOtherAuthors td:last-child {
+	float: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+.btnTransferent {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+
+input#btnSubmit.btn.btn-primary.btn-sm {
+	background-color: #f32837;
+	border-color: #f32837;
+}
+
+.btn.btn-primary.btn-sm {
+	background-color: #11213F;
+	border-color: #11213F;
+}
+
+.btn.btn-sm {
+	background-color: #11213F;
+	border-color: #11213F;
+	color: #FFFFFF;
+}
+
+div.validation-summary-errors > ul li {
+	display: inline;
+}
+
+	div.validation-summary-errors > ul li:after {
+		content: ", ";
+	}
+
+	div.validation-summary-errors > ul li:last-child:after {
+		content: "";
+	}
+
+div.validation-summary-errors > span:after {
+	content: "\a";
+	white-space: pre;
+}
+
+.pdLeft {
+	padding-left: 13em;
+}
+
+input#txtOtherAuhtorName.form-control.input-sm {
+	width: 280px;
+}
+
+input#txtAuthorAffilation.form-control.input-sm {
+	width: 280px;
+}
+
+.SearchResultTable td {
+	text-align: left;
+	vertical-align: middle;
+}
+
+.textSize {
+	font-size: 13px;
+}
+
+btn-sm {
+	font-size: 13px;
+}
+
+#ddlOverallAnalysis {
+	text-align: left;
+}
+
+#TransferFrom {
+	width: 310px;
+}
+
+.imgDropDownComment {
+	resize: none;
+	width: 208px;
+	height: 45px;
+}
+
+a#scroll-up {
+	bottom: 20px;
+	position: fixed;
+	right: 20px;
+	display: none;
+	-webkit-font-smoothing: antialiased;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	font-size: 0px;
+	display: inline;
+	width: 0px;
+	height: 0px;
+	border-left-width: 15px;
+	border-left-style: solid;
+	border-left-color: transparent;
+	border-right-width: 15px;
+	border-right-style: solid;
+	border-right-color: transparent;
+	border-bottom-width: 30px;
+	border-bottom-style: solid;
+	border-bottom-color: red;
+}
+
+	a#scroll-up:before {
+		content: '\f432';
+	}
+
+	a#scroll-up:hover {
+		opacity: 1;
+		filter: alpha(opacity=100); /* For IE8 and earlier */
+	}
+
+.stylegrouprow {
+	background-color: whitesmoke;
+	font-weight: bold;
+}
+
+tr.stylegrouprow > td:nth-child(1) {
+	width: 30%;
+}
+
+tr.stylegrouprow > td:nth-child(2) {
+	width: 70%;
+}
+
+.row:before, .row:after {
+	display: table;
+	content: initial;
+}
+
+
+#ui-datepicker-div {
+	display: none;
+}

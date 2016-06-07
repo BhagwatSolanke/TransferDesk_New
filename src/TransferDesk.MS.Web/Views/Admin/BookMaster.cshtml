@@ -1,0 +1,107 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.BookMasterVm
+@{
+    ViewBag.Title = "BookMaster";
+    Layout = "~/Views/Shared/_ManuscriptAdmin.cshtml";
+}
+<h2>Book Master</h2>
+<style>
+    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border: none;
+    }
+
+    .MetadataInfo td:nth-child(1) {
+        width: 13%;
+    }
+</style>
+@Html.Raw(TempData["msg"])
+@using (Html.BeginForm("BookMaster", "Admin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(x => x.ID)
+    <table class="table MetadataInfo">
+        <tr>
+            <td>Book Title<span class="asterik">*</span></td>
+            <td>
+                @Html.TextBoxFor(x => x.BookTitle, new { @class = "form-control input-sm", style = "width: 260px", placeholder = "Enter book title" })
+                @Html.ValidationMessageFor(x => x.BookTitle, "", new { style = "color:red" })
+            </td>
+        </tr>
+        <tr>
+            <td>GPU Information</td>
+            <td>
+                @Html.TextBoxFor(x => x.GPUInformation, new { @class = "form-control input-sm", style = "width: 260px", placeholder = "Enter GPU number" })
+                @Html.ValidationMessageFor(x => x.GPUInformation, "", new { style = "color:red" })
+            </td>
+        </tr>
+        <tr>
+            <td>FTP Links</td>
+            <td>
+                @Html.TextBoxFor(x => x.FTPLink, new { @class = "form-control input-sm", style = "width: 260px", placeholder = "Enter FTP link" })
+            </td>
+        </tr>
+        <tr id="dvIsActive">
+            <td>IsActive</td>
+            <td>
+                @Html.CheckBoxFor(x => x.IsActive)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="left" style="padding-left: 315px;">
+                <input type="submit" id="btnBookMasterAdd" class="btn btn-primary btn-sm" value="Add" />
+                <input type="button" value="Reset" id="btnReset" class="btn btn-primary btn-sm" />
+            </td>
+        </tr>
+    </table>
+}
+<style>
+    th {
+        text-align: center;
+    }
+</style>
+<table class="table-bordered table-striped table-hover " style="margin-top: 50px">
+    <thead>
+        <tr>
+            <th width="402px">
+                Book Title
+            </th>
+            <th width="333px">
+                GPU Information
+            </th>
+            <th width="333px">
+                FTP Links
+            </th>
+            <th width="100px" align="center">
+                Active
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    @foreach (var data in Model.BookMasterData)
+    {
+        <tr>
+            <td style="display: none">@data.ID</td>
+            <td>
+               @data.BookTitle
+            </td>
+            <td>
+                @data.GPUInformation
+            </td>
+            <td>
+                @data.FTPLink
+            </td>
+            <td align="center" width="100px">
+                @Html.CheckBox("IsActive", @data.IsActive, new { disabled = "disabled" })
+            </td>
+            <td>
+                <input type="button" id="btnEdit" class="btn btn-primary btn-sm editButton" style="line-height: normal;" value="Edit" />
+            </td>
+        </tr>
+    }
+</table>
+
+<script src="~/Scripts/CustomeScript/BookMaster.js"></script>
+

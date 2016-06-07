@@ -1,0 +1,133 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.UserVM
+@{
+    ViewBag.Title = "UserMaster";
+    Layout = "~/Views/Shared/_CommanLayout.cshtml";
+
+}
+<style type="text/css">
+    .row {
+        margin-top: 10px;
+    }
+
+    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+        padding: 7px;
+    }
+    .col-lg-4
+    {
+        padding:0px;
+    }
+
+   
+</style>
+<script src="~/Scripts/jquery.min.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/CustomeScript/UserScript.js"></script>
+<br /><br />
+<div class="container-fluid">
+    @Html.Raw(TempData["msg"])
+    <div class="main col-lg-12">
+        <div class="col-lg-4">
+            @using (Html.BeginForm("UserMaster", "User", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(x => x.ID)
+                <div class="row">
+                    <div class="col-lg-4">
+                        Employee ID
+                        <span class="asterik">* </span>
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.EmpID, new { @class = "form-control input-sm", placeholder = "Enter employee id" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        Emp User ID
+                        <span class="asterik">* </span>
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.EmpUserID, new { @class = "form-control input-sm", placeholder = "Enter employee userid" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        Employee Name
+                        <span class="asterik">* </span>
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.EmpName, new { @class = "form-control input-sm", placeholder = "Enter employee name" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        Employee Email
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control input-sm", placeholder = "Enter employee email" })
+                    </div>
+                </div>
+               
+    <div class="row" id="dvStatus">
+        <div class="col-lg-4">
+            IsActive
+        </div>
+        <div class="col-lg-8">
+            @Html.CheckBoxFor(x=>x.IsActive)
+        </div>
+    </div>
+                <div class="row" style="text-align:right;padding-right:2em">
+                    <div class="col-lg-12">
+                        <input type="submit" id="btnUserSubmit" class="btn btn-primary btn-sm" value="Submit" />
+                        <input type="button" value="Reset" id="btnReset" class="btn btn-primary btn-sm" />
+                    </div>
+                </div>
+
+            }
+        </div>
+        <div class="col-lg-8 table-responsive" style="padding-top: 0.7em; overflow-y:auto;height:400px">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            Employee ID
+                        </th>
+                        <th>
+                           Employee UserID
+                        </th>
+                        <th>
+                            Employee Name
+                        </th>
+                        <th>
+                            Employee Email
+                        </th>
+                        <th>
+                            IsActive
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model.users)
+                    {
+                        <tr>
+                            <td style="display:none">@user.ID</td>
+                            <td>@user.EmpID</td>
+                            <td>@user.EmpUserID</td>
+                            <td>@user.EmpName</td>
+                            <td>@user.Email</td>
+                            <td align="center">
+                                @Html.CheckBox("IsActive", @user.IsActive, new { disabled = "disabled" })
+                            </td>
+                            <td>
+                                <input type="button" id="btnEdit" class="btn btn-primary btn-sm editButton" style="line-height: normal;" value="Edit" />
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

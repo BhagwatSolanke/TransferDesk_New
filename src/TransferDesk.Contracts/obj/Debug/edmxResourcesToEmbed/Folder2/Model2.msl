@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbTransferDeskServiceModelStoreContainer" CdmEntityContainer="dbTransferDeskServiceEntities1">
+    <FunctionImportMapping FunctionImportName="pr_GetMSDetails" FunctionName="dbTransferDeskServiceModel.Store.pr_GetMSDetails" />
+    <FunctionImportMapping FunctionImportName="pr_GetUserMaster" FunctionName="dbTransferDeskServiceModel.Store.pr_GetUserMaster" />
+    <FunctionImportMapping FunctionImportName="pr_MaxNumber" FunctionName="dbTransferDeskServiceModel.Store.pr_MaxNumber" />
+    <FunctionImportMapping FunctionImportName="pr_SearchMSDetails" FunctionName="dbTransferDeskServiceModel.Store.pr_SearchMSDetails" />
+    <FunctionImportMapping FunctionImportName="spGetReviewerDetails" FunctionName="dbTransferDeskServiceModel.Store.spGetReviewerDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbTransferDeskServiceModel.spGetReviewerDetails_Result">
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
+          <ScalarProperty Name="Affiliation" ColumnName="Affiliation" />
+          <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+          <ScalarProperty Name="Areaofexpertise" ColumnName="Areaofexpertise" />
+          <ScalarProperty Name="Referencelink" ColumnName="Referencelink" />
+          <ScalarProperty Name="Numberofrelevantpublications" ColumnName="Numberofrelevantpublications" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

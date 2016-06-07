@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E75E68D-39D8-4BB5-AB02-A31446CD12AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TransferDesk.Services</RootNamespace>
+    <AssemblyName>TransferDesk.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manuscript\AdminDashBoardService.cs" />
+    <Compile Include="Manuscript\HTMLOutputs\ManuscriptScreeningPreview.cs" />
+    <Compile Include="Manuscript\ManuscriptLoginService.cs" />
+    <Compile Include="Manuscript\ManuscriptService.cs" />
+    <Compile Include="Manuscript\ReportOutputs\TransferReportDocX.cs" />
+    <Compile Include="Manuscript\ReviewerService.cs" />
+    <Compile Include="Manuscript\ViewModel\AdminDasboardVM.cs" />
+    <Compile Include="Manuscript\ViewModel\AssociateDashboardVM.cs" />
+    <Compile Include="Manuscript\ViewModel\BookMasterVm.cs" />
+    <Compile Include="Manuscript\ViewModel\JournalArticleTypeVM.cs" />
+    <Compile Include="Manuscript\ViewModel\JournalSectionTypeVM.cs" />
+    <Compile Include="Manuscript\ViewModel\JournalVM.cs" />
+    <Compile Include="Manuscript\ViewModel\ManuscriptBookLoginVM.cs" />
+    <Compile Include="Manuscript\ViewModel\ManuscriptBookScreeningVm.cs" />
+    <Compile Include="Manuscript\ViewModel\ManuscriptErrorCategoryVM.cs" />
+    <Compile Include="Manuscript\ViewModel\ManuscripScreeningVM.cs" />
+    <Compile Include="Manuscript\ViewModel\ManuscriptLoginVM.cs" />
+    <Compile Include="Manuscript\ViewModel\MSIDReviewersVM.cs" />
+    <Compile Include="Manuscript\ViewModel\QualityAnalystDashBoardVM.cs" />
+    <Compile Include="Manuscript\ViewModel\ReviewerErrorCategoryVM.cs" />
+    <Compile Include="Manuscript\ViewModel\ReviewerSuggestionVM.cs" />
+    <Compile Include="Manuscript\ViewModel\UserRoleVM.cs" />
+    <Compile Include="Manuscript\ViewModel\UserVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransferDesk.BAL\TransferDesk.BAL.csproj">
+      <Project>{d493cb05-550c-4adf-beaa-8374d1a65f17}</Project>
+      <Name>TransferDesk.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferDesk.Contracts\TransferDesk.Contracts.csproj">
+      <Project>{d8c97344-e71f-4ec2-a638-f2de61180905}</Project>
+      <Name>TransferDesk.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferDesk.DAL\TransferDesk.DAL.csproj">
+      <Project>{af003477-c4a5-4890-98d2-26ae7b6c590a}</Project>
+      <Name>TransferDesk.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferDesk.UtilitiesHtml\TransferDesk.UtilitiesHtml.csproj">
+      <Project>{060cc68b-6686-49b6-ba1f-f9308f983e94}</Project>
+      <Name>TransferDesk.UtilitiesHtml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferDesk.Utilities\TransferDesk.Utilities.csproj">
+      <Project>{846c0f51-68f2-4bf2-80f1-73246f1ec062}</Project>
+      <Name>TransferDesk.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

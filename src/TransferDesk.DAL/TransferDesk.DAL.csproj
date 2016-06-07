@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF003477-C4A5-4890-98D2-26AE7B6C590A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TransferDesk.DAL</RootNamespace>
+    <AssemblyName>TransferDesk.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manuscript\DataContext\ManuscriptDBContext.cs" />
+    <Compile Include="Manuscript\MSReviewerInfo.cs" />
+    <Compile Include="Manuscript\Repositories\AdminDashBoardDBReadSide.cs" />
+    <Compile Include="Manuscript\Repositories\AdminDashBoardReposistory.cs" />
+    <Compile Include="Manuscript\Repositories\ArticleTypeRepository.cs" />
+    <Compile Include="Manuscript\Repositories\AssociateDashBoardReposistory.cs" />
+    <Compile Include="Manuscript\Repositories\BookMasterRepository.cs" />
+    <Compile Include="Manuscript\Repositories\EmailDetailsRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ErrorCategoryRepository.cs" />
+    <Compile Include="Manuscript\Repositories\GenericRepository\GenericRepository.cs" />
+    <Compile Include="Manuscript\Repositories\JournalArticleTypeRepository.cs" />
+    <Compile Include="Manuscript\Repositories\JournalRepository.cs" />
+    <Compile Include="Manuscript\Repositories\JournalSectionTypeRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptBookLoginDetailsRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptBookLoginRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptBookScreeningRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptErrorCategoryRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptDBRepositoriesReadSide.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptLoginDBRepositoryReadSide.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptLoginDetailsRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptLoginRepository.cs" />
+    <Compile Include="Manuscript\Repositories\MSReviewerErrorCategory.cs" />
+    <Compile Include="Manuscript\Repositories\MSReviewerLink.cs" />
+    <Compile Include="Manuscript\Repositories\MSReviewersSuggestion.cs" />
+    <Compile Include="Manuscript\Repositories\MSSAreaOfExpertise.cs" />
+    <Compile Include="Manuscript\Repositories\MSSReviewerMailRepository.cs" />
+    <Compile Include="Manuscript\Repositories\OtherAuthorsRepository.cs" />
+    <Compile Include="Manuscript\Repositories\ManuscriptRepository.cs" />
+    <Compile Include="Manuscript\Repositories\QualityAnalystDashBoardReposistory.cs" />
+    <Compile Include="Manuscript\Repositories\ReviewerSuggestionDBRepositoryReadSide.cs" />
+    <Compile Include="Manuscript\Repositories\UserRoleRepository.cs" />
+    <Compile Include="Manuscript\UnitOfWork\ManuscriptLoginUnitOfWork.cs" />
+    <Compile Include="Manuscript\UnitOfWork\ManuscriptScreeningUnitOfWork.cs" />
+    <Compile Include="Manuscript\Repositories\UserRepository.cs" />
+    <Compile Include="Manuscript\UnitOfWork\ReviewerSuggestionUnitOfWork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransferDesk.Contracts\TransferDesk.Contracts.csproj">
+      <Project>{d8c97344-e71f-4ec2-a638-f2de61180905}</Project>
+      <Name>TransferDesk.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

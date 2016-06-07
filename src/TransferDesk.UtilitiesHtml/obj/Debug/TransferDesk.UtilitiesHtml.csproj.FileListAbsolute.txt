@@ -1,0 +1,93 @@
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\TransferDesk.Utilities2.dll
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\TransferDesk.Utilities2.pdb
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\DocumentFormat.OpenXml.dll
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlAgilityPack.dll
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlToOpenXml.dll
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\DocumentFormat.OpenXml.xml
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlAgilityPack.pdb
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlAgilityPack.xml
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlToOpenXml.pdb
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\obj\Debug\TransferDesk.Utilities2.dll
+D:\TransferDeskInDev\TransferDesk.Utilities2\TransferDesk.Utilities2\obj\Debug\TransferDesk.Utilities2.pdb
+D:\Transferdesk\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\Transferdesk\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\Transferdesk\TransferDesk.UtilitiesHtml\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Transferdesk\TransferDesk.UtilitiesHtml\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Transferdesk\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\Transferdesk\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\Transferdesk\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.dll
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\bin\Debug\TransferDesk.UtilitiesHtml.pdb
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.csprojResolveAssemblyReference.cache
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.dll
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.UtilitiesHtml\obj\Debug\TransferDesk.UtilitiesHtml.pdb

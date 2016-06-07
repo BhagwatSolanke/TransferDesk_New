@@ -1,0 +1,175 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.JournalVM
+@using TransferDesk.Contracts.Manuscript.Entities;
+
+@{
+    ViewBag.Title = "JournalMaster";
+    Layout = "~/Views/Shared/_ManuscriptAdmin.cshtml";
+}
+@Scripts.Render("~/bundles/JournalScript")
+<style type="text/css">
+    .row {
+        margin-top: 10px;
+    }
+
+    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+        padding: 5px;
+    }
+
+    .col-lg-4 {
+        padding: 0px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    .datamargin {
+        margin-top: 10px;
+    }
+
+    tbody {
+        width: 900px;
+        display: block;
+        overflow-y: scroll;
+        height: 360px;
+    }
+
+    thead {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+
+    body {
+        padding: 10px;
+    }
+</style>
+
+<br /><br />
+
+<h3 style="padding-left:22px;text-decoration:underline;">Journal Master</h3>
+<div class="container-fluid" style="padding-left: 20px">
+    @Html.Raw(TempData["msg"])
+    <div class="main col-lg-12">
+        <div class="col-lg-4">
+            @using (Html.BeginForm("JournalMaster", "Admin", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(x => x.ID)
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        Journal Title
+                        <span class="asterik">* </span>
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.JournalTitle, new {@class = "form-control input-sm sizedata", placeholder = "Enter Journal Title"})
+                        @Html.ValidationMessageFor(x => x.JournalTitle, "", new {style = "color:red"})
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        Journal Link
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.TextBoxFor(x => x.Link, new {@class = "form-control input-sm", placeholder = "Enter Journal Link"})
+                    </div>
+                </div>
+
+                <div class="row" id="dvIsActive">
+                    <div class="col-lg-4">
+                        IsActive
+                    </div>
+                    <div class="col-lg-8">
+                        @Html.CheckBoxFor(x => x.IsActive)
+                    </div>
+                </div>
+                <div class="row" style="text-align: right; padding-right: 2em">
+                    <div class="col-lg-12">
+                        <input type="submit" id="btnJournalAdd" class="btn btn-primary btn-sm" value="Add"/>
+                        <input type="button" value="Reset" id="btnReset" class="btn btn-primary btn-sm"/>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<br/><br /><br /><br />
+    <table class="table-bordered table-striped table-hover " style="margin-top: 50px">
+        <thead>
+        <tr>
+            <th width="402px">
+                Journal Title
+            </th>
+            <th width="333px">
+                Journal Link
+            </th>
+            <th width="100px" >
+                Active
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        </thead>
+        @foreach (var data in Model.Journals)
+        {
+            <tr>
+                <td style="display: none">@data.ID</td>
+                <td>
+                    @data.JournalTitle
+                </td>
+                <td>
+                    @data.Link
+                </td>
+                <td align="center" width="100px">
+                    @Html.CheckBox("IsActive", @data.IsActive, new {disabled = "disabled"})
+                </td>
+                <td>
+                    <input type="button" id="btnEdit" class="btn btn-primary btn-sm editButton" style="line-height: normal;" value="Edit"/>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+@*<div class="col-lg-4" style="width:785px; padding-left:22px;">
+    <table class="table table-bordered table-striped table-hover " style="margin-top:20px;">
+        <thead>
+            <tr>
+                <th style="width: 550px;">
+                    Journal Title
+                </th>
+                <th style="width:550px;">
+                    Journal Link
+                </th>
+                <th style="width:112px;">
+                    Active
+                </th>
+                <th style="width:139px;">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        @foreach (var data in Model.Journals)
+        {
+            <tr>
+                <td style="display:none ">@data.ID</td>
+                <td width="308px">
+                    @data.JournalTitle
+                </td>
+                <td style="width: 550px">
+                    @data.Link
+                </td>
+                <td align="center" width="150px">
+                    @Html.CheckBox("IsActive", @data.IsActive, new { disabled = "disabled" })
+                </td>
+                <td width="150px" align="center">
+                    <input type="button" id="btnEdit" class="btn btn-primary btn-sm editButton" style="line-height: normal;" value="Edit" />
+                </td>
+            </tr>
+        }
+    </table>
+</div>*@
+

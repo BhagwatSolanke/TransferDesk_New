@@ -1,0 +1,27 @@
+﻿<div class="navbar navbar-fixed-top" style="background-color:whitesmoke;">
+    <div class="container">
+        <br />
+        <div class="navbar-header">
+            <p style="display:inline;">
+                <img src="~/Images/743382.jpg" width="250px" height="35px" title="Springer Logo" />
+                <span class="heading">Manuscript Screening</span>
+                <span style="padding-left:80px"></span>
+                <table align="right">
+                    <tr>
+                        @*<td>
+                                <span class="searchFont">Search Column:</span>
+                            </td>*@
+                        <td>
+                            @Html.DropDownList("SelectedValue", new SelectList(ViewBag.SearchList, "ID", "SearchByname"), "Select-By", new { @class = "form-control input-sm searchControl-size" })
+                        </td>
+                        @*<td><span class="searchFont">Search Text:</span>  </td>*@
+                        <td><input type="text" id="txtSearch" class="form-control input-sm searchControl-size txtSearchBy" name="SearchBy" placeholder="Search journals" /></td>
+                        <td>
+                            <input type="button" id="btnSubmit" value="Go" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" data-backdrop="static" />
+                            <input type="reset" id="btnNewAdd" value="New" class="btn btn-primary btn-sm"></td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+    </div>
+</div>

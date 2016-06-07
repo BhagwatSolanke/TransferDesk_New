@@ -1,0 +1,87 @@
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\Release On Live\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\Release On Live\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\Release On Live\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\Release On Live\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\Release On Live\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\DocumentFormat.OpenXml.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\OpenXmlPowerTools.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\System.IO.Packaging.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.pdb
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.xml
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\DocumentFormat.OpenXml.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\OpenXmlPowerTools.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\System.IO.Packaging.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\DocumentFormat.OpenXml.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\OpenXmlPowerTools.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\System.IO.Packaging.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities.pdb
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\OpenXmlPowerTools.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\System.IO.Packaging.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities2.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.dll
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\TransferDesk.Utilities2.pdb
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.pdb
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlAgilityPack.xml
+D:\Transferdesk\TransferDesk.Utilities\bin\Debug\HtmlToOpenXml.pdb
+D:\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.csprojResolveAssemblyReference.cache
+D:\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.dll
+D:\Transferdesk\TransferDesk.Utilities\obj\Debug\TransferDesk.Utilities.pdb

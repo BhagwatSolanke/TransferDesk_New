@@ -1,0 +1,75 @@
+﻿.AllOpenJobs {
+    margin-bottom: 15px;
+   
+}
+
+.globalDataContainer{
+    margin: 0 0 15px 0;
+    padding: 7px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px #666;
+    clear: both;
+}
+table.grid-table tr.grid-row-selected td, table.grid-table tr.grid-row-selected td a {
+    background:slateblue !important;
+     color: #333 !important;
+}
+.grid-table td.leftAligned {
+    text-align: left;
+}
+
+
+.grid-table td.rightAligned {
+    text-align: left;
+}
+
+
+.grid-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.grid-body {
+    overflow-x: scroll;
+}
+
+.grid-body {
+    overflow: scroll;
+}
+    .grid-table th, .grid-table td {
+        padding: 3px 5px !important;
+        word-wrap: break-word;
+        text-align: center; 
+        
+        font-size: 13px;
+        vertical-align: middle !important;
+    }
+
+        .grid-table th label, .grid-table td label {
+            font-size: 13px;
+        }
+
+    .grid-table th {
+        background:whitesmoke;    
+        font-size: 14px;
+  
+    }
+ 
+
+    .grid-table .buttonImg {
+    display: inline-block;
+}
+
+
+    .grid-table tr:nth-child(even) td {
+        background: #FDFDFD !important;
+    }
+
+    .grid-table tr:nth-child(odd) td {
+        background:white !important;
+    }
+
+
+
+
+

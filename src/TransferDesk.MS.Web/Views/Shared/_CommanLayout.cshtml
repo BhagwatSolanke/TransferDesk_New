@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript"> var AppPath = '@Url.Content("~/")' </script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top" style="background-color:whitesmoke;">
+        <div class="container">
+            <br />
+            <div class="navbar-header">
+                <p style="display: inline;">
+                    <img src="~/Images/Springer-Nature.jpg" width="250px" height="35px" title="Springer Logo"/>
+                    <span class="heading" style="padding-left: 150px">Manuscript Services-Login Form</span>
+                    <span style="padding-left: 50px"></span>
+                </p>
+            </div>
+            <div class="navbar">
+                <ul class="nav nav-pills">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" style="color: black;" class="dropdown-toggle">Manuscript Login<b class="caret"></b></a>
+                        <ul class="dropdown-menu" id="menu1">
+                            <li>@Html.ActionLink("Journal Login", "JournalLogin", "ManuscriptLogin")</li>
+                            <li>@Html.ActionLink("Book Login", "BookLogin", "ManuscriptLogin")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            @*<span style="padding-left:130px;"></span><b>Welcome @Model.EmployeeName</b>*@
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <br />
+    <hr />
+    <footer>
+        <div class="col-md-11">
+            <p align="center"> Copyright &copy; @DateTime.Now.Year | Springer Nature</p>
+        </div>
+        <div class="col-md-1">
+            <p>MS v1.0.7</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-fixed-top" style="background-color:whitesmoke;">
+        <div class="container">
+            <br />
+            <div class="navbar-header">
+             
+                <p style="display:inline;">
+                    <img src="~/Images/Springer-Nature.jpg" width="250px" height="35px" title="Springer Logo" />
+                    <span class="heading">Manuscript Screening</span>
+                    <span style="padding-left:50px"></span>
+                    <table align="right">
+                        <tr>
+                            <td>
+                                @Html.DropDownList("SelectedValue", new SelectList(ViewBag.SearchList, "ID", "SearchByname"), new { @class = "form-control input-sm searchControl-size" })
+                            </td>
+                            <td><input type="text" id="txtSearch" class="form-control input-sm searchControl-size txtSearchBy" name="SearchBy" placeholder="Search journals"  /></td>
+                            <td>
+                                <input type="button" id="btnSubmit" value="Go" class="btn btn-primary btn-sm"  data-target="#myModal" />
+                                <input type="reset" id="btnNewAdd" value="New" class="btn btn-primary btn-sm">
+                                <a href="http://192.168.84.68/transferDeskservicereport/Manuscript.aspx" target="_blank" class="btn btn-primary btn-sm" role="button">Report</a>
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal fade modal-wide" tabindex='-1' data-backdrop="static" data-dismiss="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label> Search Result(s)</label>
+                    <button type="button" class="close" data-dismiss="modal" name="ClosePopup" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="myPartialViewDiv" class="table-responsive">
+                        @*<div id="circle" align="center"
+                 class="circle"
+                 data-value="0.9"
+                 data-size="60"
+                 data-thickness="20"
+                 data-animation-start-value="1.0"
+                 data-fill="{
+                    &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;,
+                    &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
+                    }"
+                 data-reverse="true">
+            </div>*@
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btnOk" class="btn btn-default btn-sm">Ok</button>
+                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" name="ClosePopup">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <br />
+        <hr />
+        <footer>
+            <p align="center"> Copyright &copy; @DateTime.Now.Year | Springer Nature, Part of Springer Science+Business Media </p>
+        </footer>
+    </div>
+</body>
+</html>

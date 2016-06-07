@@ -1,0 +1,25 @@
+
+private void TreeNode2Xml(TreeNodeCollection tnc)
+{
+    foreach (TreeNode node in tnc)
+    {
+        if (node.Nodes.Count > 0)
+        {
+            xr.WriteStartElement(node.Text);
+            if (node.Tag != null) //attribures retrieved here
+            {
+                List<XAttribute> attributeList = node.Tag as List<XAttribute>;
+                foreach (XAttribute attribute in attributeList)
+                {
+                    xr.WriteAttributeString(attribute.Name.ToString(), attribute.Value.ToString());
+                }
+            }
+            saveNodes(node.Nodes);
+            xr.WriteEndElement();
+        }
+        else //No child nodes, so we just write the text
+        {
+            xr.WriteString(node.Text);
+        }
+    }
+}  

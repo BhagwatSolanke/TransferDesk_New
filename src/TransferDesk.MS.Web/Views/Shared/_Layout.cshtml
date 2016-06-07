@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript"> var AppPath = '@Url.Content("~/")' </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text">Hello, @User.Identity.Name!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p> Copyright&copy; @DateTime.Now.Year -2016 Springer Nature</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+@*<div class="container-fluid">
+    <div class="main col-lg-12">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-md-2">
+                    UserName
+                </div>
+                <div class="col-md-2">
+                    textbox
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    UserName
+                </div>
+                <div class="col-md-2">
+                    textbox
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            adfv
+        </div>
+    </div>
+</div>*@

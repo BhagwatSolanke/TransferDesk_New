@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbTransferDeskServiceModelStoreContainer" CdmEntityContainer="dbTransferDeskServiceEntities">
+    <EntitySetMapping Name="AreaOfExpertiseMaster">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.AreaOfExpertiseMaster">
+        <MappingFragment StoreEntitySet="AreaOfExpertiseMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleType">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.ArticleType">
+        <MappingFragment StoreEntitySet="ArticleType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleTypeName" ColumnName="ArticleTypeName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Data_">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Data_">
+        <MappingFragment StoreEntitySet="Data$">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
+          <ScalarProperty Name="Affiliation" ColumnName="Affiliation" />
+          <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+          <ScalarProperty Name="Areaofexpertise" ColumnName="Areaofexpertise" />
+          <ScalarProperty Name="Referencelink" ColumnName="Referencelink" />
+          <ScalarProperty Name="Numberofrelevantpublications" ColumnName="Numberofrelevantpublications" />
+          <ScalarProperty Name="F9" ColumnName="F9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DropDownMaster">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.DropDownMaster">
+        <MappingFragment StoreEntitySet="DropDownMaster">
+          <ScalarProperty Name="DropDownMasterID" ColumnName="DropDownMasterID" />
+          <ScalarProperty Name="DropDownText" ColumnName="DropDownText" />
+          <ScalarProperty Name="DropDownImagePath" ColumnName="DropDownImagePath" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorCategory">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.ErrorCategory">
+        <MappingFragment StoreEntitySet="ErrorCategory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ErrorCategory1" ColumnName="ErrorCategory" />
+          <ScalarProperty Name="ErrorCategoryDescription" ColumnName="ErrorCategoryDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Journal">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Journal">
+        <MappingFragment StoreEntitySet="Journal">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="JournalTitle" ColumnName="JournalTitle" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalArticleTypes">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.JournalArticleTypes">
+        <MappingFragment StoreEntitySet="JournalArticleTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="JournalID" ColumnName="JournalID" />
+          <ScalarProperty Name="ArticleTypeID" ColumnName="ArticleTypeID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalSections">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.JournalSections">
+        <MappingFragment StoreEntitySet="JournalSections">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="JournalID" ColumnName="JournalID" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manuscript">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Manuscript">
+        <MappingFragment StoreEntitySet="Manuscript">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="JournalID" ColumnName="JournalID" />
+          <ScalarProperty Name="MSID" ColumnName="MSID" />
+          <ScalarProperty Name="ArticleTypeID" ColumnName="ArticleTypeID" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="CorrespondingEditor" ColumnName="CorrespondingEditor" />
+          <ScalarProperty Name="AssignedEditor" ColumnName="AssignedEditor" />
+          <ScalarProperty Name="AssociateStartDate" ColumnName="AssociateStartDate" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserMasterID" ColumnName="UserMasterID" />
+          <ScalarProperty Name="Crosscheck_iThenticateResult" ColumnName="Crosscheck_iThenticateResult" />
+          <ScalarProperty Name="Highest_iThenticateResult" ColumnName="Highest_iThenticateResult" />
+          <ScalarProperty Name="English_Lang_check" ColumnName="English_Lang_check" />
+          <ScalarProperty Name="Crosscheck_iThenticateResultComments" ColumnName="Crosscheck_iThenticateResultComments" />
+          <ScalarProperty Name="English_Lang_checkComment" ColumnName="English_Lang_checkComment" />
+          <ScalarProperty Name="Ethics_ComplianceComments" ColumnName="Ethics_ComplianceComments" />
+          <ScalarProperty Name="Ethics_Compliance" ColumnName="Ethics_Compliance" />
+          <ScalarProperty Name="TransferFrom" ColumnName="TransferFrom" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Abstarct" ColumnName="Abstarct" />
+          <ScalarProperty Name="AnalysisResult" ColumnName="AnalysisResult" />
+          <ScalarProperty Name="AssociateSubmissionDate" ColumnName="AssociateSubmissionDate" />
+          <ScalarProperty Name="AssociateTAT" ColumnName="AssociateTAT" />
+          <ScalarProperty Name="QualityCheck" ColumnName="QualityCheck" />
+          <ScalarProperty Name="QualityStartCheckDate" ColumnName="QualityStartCheckDate" />
+          <ScalarProperty Name="ErrorCategoryID" ColumnName="ErrorCategoryID" />
+          <ScalarProperty Name="QualityEndDate" ColumnName="QualityEndDate" />
+          <ScalarProperty Name="FinalSubmitDate" ColumnName="FinalSubmitDate" />
+          <ScalarProperty Name="QualityTAT" ColumnName="QualityTAT" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManuscriptAuthors">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.ManuscriptAuthors">
+        <MappingFragment StoreEntitySet="ManuscriptAuthors">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MSID" ColumnName="MSID" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+          <ScalarProperty Name="Affillation" ColumnName="Affillation" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CorrespondingAuthor" ColumnName="CorrespondingAuthor" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ManuscriptID" ColumnName="ManuscriptID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceReviewerlink">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.ReferenceReviewerlink">
+        <MappingFragment StoreEntitySet="ReferenceReviewerlink">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReferenceLink" ColumnName="ReferenceLink" />
+          <ScalarProperty Name="ReviewerMasterID" ColumnName="ReviewerMasterID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reviewer">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Reviewer">
+        <MappingFragment StoreEntitySet="Reviewer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
+          <ScalarProperty Name="Affillation" ColumnName="Affillation" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NoOfPublication" ColumnName="NoOfPublication" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Modify_dttm" ColumnName="Modify_dttm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchByMaster">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.SearchByMaster">
+        <MappingFragment StoreEntitySet="SearchByMaster">
+          <ScalarProperty Name="SearchByID" ColumnName="SearchByID" />
+          <ScalarProperty Name="SearchByName" ColumnName="SearchByName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Modify_dttm" ColumnName="Modify_dttm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Section">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Section">
+        <MappingFragment StoreEntitySet="Section">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusMaster">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.StatusMaster">
+        <MappingFragment StoreEntitySet="StatusMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TitleMaster">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.TitleMaster">
+        <MappingFragment StoreEntitySet="TitleMaster">
+          <ScalarProperty Name="TitleID" ColumnName="TitleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMaster">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.UserMaster">
+        <MappingFragment StoreEntitySet="UserMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Modify_dttm" ColumnName="Modify_dttm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.UserRoles">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserMasterID" ColumnName="UserMasterID" />
+          <ScalarProperty Name="RollID" ColumnName="RollID" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Title_">
+      <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Title_">
+        <MappingFragment StoreEntitySet="Title$">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Modify_dttm" ColumnName="Modify_dttm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="pr_GetMSDetails" FunctionName="dbTransferDeskServiceModel.Store.pr_GetMSDetails" />
+    <FunctionImportMapping FunctionImportName="pr_GetUserMaster" FunctionName="dbTransferDeskServiceModel.Store.pr_GetUserMaster" />
+    <FunctionImportMapping FunctionImportName="pr_MaxNumber" FunctionName="dbTransferDeskServiceModel.Store.pr_MaxNumber" />
+    <FunctionImportMapping FunctionImportName="pr_SearchMSDetails" FunctionName="dbTransferDeskServiceModel.Store.pr_SearchMSDetails" />
+  </EntityContainerMapping>
+</Mapping>

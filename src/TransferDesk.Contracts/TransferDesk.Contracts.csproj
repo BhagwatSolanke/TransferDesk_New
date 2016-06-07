@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8C97344-E71F-4EC2-A638-F2DE61180905}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TransferDesk.Contracts</RootNamespace>
+    <AssemblyName>TransferDesk.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manuscript\ComplexTypes\AdminDashBoard\pr_AdminDashBoardGetAllOpenJobs_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\AdminDashBoard\pr_GetAssociate.cs" />
+    <Compile Include="Manuscript\ComplexTypes\AdminDashBoard\pr_GetLastAssociateName_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\AssociateDashBoard\pr_GetSpecificAssociateDetails_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\LocationInfo\pr_LocationInfo_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\ManuscriptAdmin\pr_GetJournalArticleDetails.cs" />
+    <Compile Include="Manuscript\ComplexTypes\ManuscriptAdmin\pr_GetJournalNameDetails.cs" />
+    <Compile Include="Manuscript\ComplexTypes\ManuscriptAdmin\pr_GetJournalSectionDetails_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\ManuscriptLogin\pr_GetBookLoignedJobs_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\ManuscriptLogin\pr_GetManuscriptLoginedJobByMSID_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\ManuscriptLogin\pr_GetManuscriptLoginJobs_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\QualityAnalystDashBoard\pr_GetSpecificQualityAnalystJobs_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\Search\pr_ReviewerDetails_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\Search\pr_SearchMSDetails_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\UserRole\pr_GetAssociateInfo_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\UserRole\pr_GetUserRoleDetails_Result.cs" />
+    <Compile Include="Manuscript\ComplexTypes\UserRole\pr_ImpersonateCredential_Result.cs" />
+    <Compile Include="Manuscript\DataContext\IManuscriptDataContext.cs" />
+    <Compile Include="Manuscript\DTO\AdminDashBoardDTO.cs" />
+    <Compile Include="Manuscript\DTO\ManuscriptBookLoginDTO.cs" />
+    <Compile Include="Manuscript\DTO\ManuscriptBookScreeningDTO.cs" />
+    <Compile Include="Manuscript\DTO\ManuscriptLoginDTO.cs" />
+    <Compile Include="Manuscript\DTO\ManuscriptScreeningDTO.cs" />
+    <Compile Include="Manuscript\DTO\MSReviewerSuggestionDTO.cs" />
+    <Compile Include="Manuscript\DTO\ReviewerDetailsDTO.cs" />
+    <Compile Include="Manuscript\Entities\ArticleType.cs" />
+    <Compile Include="Manuscript\Entities\ManuscriptBookLogin.cs" />
+    <Compile Include="Manuscript\Entities\BookMaster.cs" />
+    <Compile Include="Manuscript\Entities\DepartmentMaster.cs" />
+    <Compile Include="Manuscript\Entities\EmailDetails.cs" />
+    <Compile Include="Manuscript\Entities\Employee.cs" />
+    <Compile Include="Manuscript\Entities\ErrorCategory.cs" />
+    <Compile Include="Manuscript\Entities\InstituteMaster.cs" />
+    <Compile Include="Manuscript\Entities\JournalStatus.cs" />
+    <Compile Include="Manuscript\Entities\Location.cs" />
+    <Compile Include="Manuscript\Entities\ManuscriptBookLoginDetails.cs" />
+    <Compile Include="Manuscript\Entities\ManuscriptBookScreening.cs" />
+    <Compile Include="Manuscript\Entities\ManuscriptErrorCategory.cs" />
+    <Compile Include="Manuscript\Entities\ImageDropDownList.cs" />
+    <Compile Include="Manuscript\Entities\ImageDropDownMenu.cs" />
+    <Compile Include="Manuscript\Entities\Journal.cs" />
+    <Compile Include="Manuscript\Entities\JournalArticleTypes.cs" />
+    <Compile Include="Manuscript\Entities\JournalSections.cs" />
+    <Compile Include="Manuscript\Entities\Manuscript.cs" />
+    <Compile Include="Manuscript\Entities\ManuscriptLogin.cs" />
+    <Compile Include="Manuscript\Entities\ManuscriptLoginDetails.cs" />
+    <Compile Include="Manuscript\Entities\MSReviewerErrorCategory.cs" />
+    <Compile Include="Manuscript\Entities\MSReviewerInfo.cs" />
+    <Compile Include="Manuscript\Entities\MSReviewerLink.cs" />
+    <Compile Include="Manuscript\Entities\MSReviewersSuggestion.cs" />
+    <Compile Include="Manuscript\Entities\MSSAreaOfExpertise.cs" />
+    <Compile Include="Manuscript\Entities\MSSReviewerMail.cs" />
+    <Compile Include="Manuscript\Entities\OtherAuthor.cs" />
+    <Compile Include="Manuscript\Entities\ReferenceReviewerlink.cs" />
+    <Compile Include="Manuscript\Entities\ReviewerErrorCategory.cs" />
+    <Compile Include="Manuscript\Entities\ReviewerMailLink.cs" />
+    <Compile Include="Manuscript\Entities\ReviewerMaster.cs" />
+    <Compile Include="Manuscript\Entities\Role.cs" />
+    <Compile Include="Manuscript\Entities\Section.cs" />
+    <Compile Include="Manuscript\Entities\StatusMaster.cs" />
+    <Compile Include="Manuscript\Entities\User.cs" />
+    <Compile Include="Manuscript\Entities\UserAdmin.cs" />
+    <Compile Include="Manuscript\Entities\UserRoles.cs" />
+    <Compile Include="Manuscript\Repositories\IJournalArticleTypeRepostory.cs" />
+    <Compile Include="Manuscript\Repositories\IJournalRepository.cs" />
+    <Compile Include="Manuscript\Repositories\IJournalSectionTypeRepository.cs" />
+    <Compile Include="Manuscript\Repositories\IManuscriptAuthorsRepo.cs" />
+    <Compile Include="Manuscript\Repositories\IManuscriptBookLoginDetails.cs" />
+    <Compile Include="Manuscript\Repositories\IManuscriptLogin.cs" />
+    <Compile Include="Manuscript\Repositories\IManuscriptLoginDetails.cs" />
+    <Compile Include="Manuscript\Repositories\IRepository.cs" />
+    <Compile Include="Manuscript\Repositories\IUnitOfWork.cs" />
+    <Compile Include="Manuscript\Repositories\IUserRepository.cs" />
+    <Compile Include="Manuscript\Entities\SearchByMaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Manuscript\Repositories\IManuscriptRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

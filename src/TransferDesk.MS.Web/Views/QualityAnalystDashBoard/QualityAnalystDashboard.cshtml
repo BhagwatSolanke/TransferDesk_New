@@ -1,0 +1,154 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.QualityAnalystDashBoardVM
+
+@{
+    Layout = null;
+}
+
+@using System.ComponentModel.Design
+@using DocumentFormat.OpenXml.Vml.Spreadsheet
+@using GridMvc.Html
+@using GridMvc.Sorting
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+@Scripts.Render("~/bundles/jquery")
+<script src="~/Scripts/gridmvc.js"></script>
+<script src="~/Scripts/gridmvc.lang.ru.js"></script>
+<link type="text/css" rel="Stylesheet" href="http://ajax.microsoft.com/ajax/jquery.ui/1.8.6/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="~/Content/Gridmvc.css" rel="stylesheet" />
+<link href="~/Content/AdminDashBoard.css" rel="stylesheet" />
+@Scripts.Render("~/bundles/AdminDashBoard")
+
+<style>
+    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+        padding: 5px;
+    }
+
+    .pagination {
+        margin: -10px 0;
+    }
+
+    .grid-header-title a {
+        color: black;
+    }
+
+    .highlight {
+        color: blue;
+    }
+
+
+    th {
+        paddding-right: 2em;
+    }
+
+        th a.asc:after, th a.desc:after {
+            position: relative;
+            left: .4em;
+        }
+
+    span {
+        font-weight: bold;
+    }
+</style>
+
+<div class="container-fluid" style="padding-left: 20px">
+    @Html.Raw(TempData["msg"])
+    <div class="main col-lg-12">
+        <div class="col-lg-4">
+            @using (Html.BeginForm("QualityAnalystDashboard", "QualityAnalystDashboard", FormMethod.Get))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="navbar navbar-fixed-top collapse navbar-collapse" style="background-color: whitesmoke;">
+                    <div style="height: 65px; width: 100%; padding-left: 150px;">
+                        <br />
+                        <div class="navbar-header">
+                            <p style="display: inline;">
+                                <img src="~/Images/Springer-Nature.jpg" width="250px" height="35px" style="margin-left: -50px" title="Springer Logo" />
+                                <span style="padding-left: 120px; font-size: 22px;">Manuscript Services</span>
+                                <span style="display: block; padding-left:323px; font-size: 18px; margin-bottom: -20px;">Quality Analyst Dashboard</span>
+                                <span style="padding-left: 25px"></span>
+                            </p>
+                        </div>
+                        <div style="padding-top: 5px; margin-left: 50px">
+                            <input type="button" value="User Guide MS" id="btnUserGuideMs" class="btn btn-primary btn-sm" style="width: 100px; padding-left: 7px;margin-left: 66px " />
+                            <input type="button" value="User Guide FR" id="btnUserGuideFR" class="btn btn-primary btn-sm" style="width: 100px; padding-left: 7px " />
+                            <input type="button" id="btnFetchId" class="btn btn-primary btn-sm" value="Fetch ID" style="width: 63px; text-align: center" />
+                            <input type="button" id="btnSearch" class="btn btn-primary btn-sm" value="Search" style="width: 63px; text-align: center" />
+                            <input type="submit" id="btnRefresh" class="btn btn-primary btn-sm" value="Refresh" style="width: 60px; padding-left: 8px; " />
+                            <input type="button" id="btnLogout" class="btn btn-primary btn-sm" value="Logout" style="width: 60px; text-align: center" />
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div id="AllOpenJobs">
+        <style>
+            .grid-wrap table thead {
+                white-space: nowrap;
+            }
+
+            .grid-wrap table tr td {
+                white-space: nowrap;
+                text-align: left;
+            }
+        </style>
+
+        @Html.Grid(Model.specificQualityAnalystdetails).Columns(columns =>
+                   {
+                       columns.Add(x => x.SrNo).Titled("Sr. No.").SetWidth("3%");
+                       columns.Add(x => x.CrestId).Titled("Crest ID").SetWidth("5%");
+                       columns.Add(x => x.JobType).Titled("Job Type").SetWidth("5%");
+                       columns.Add(x => x.ServiceType).Titled("Service Type").SetWidth("8%");
+                       columns.Add(x => x.MSID).Titled("MSID/Chp No.").SetWidth("10%");
+                       columns.Add(x => x.JournalBookName).Titled("Journal Name/Book title");
+                       columns.Add(x => x.PageCount).Titled("Page Count");
+                       columns.Add(x => x.Name).Titled("Name");
+                       columns.Add(x => x.Status);
+                       columns.Add(x => x.Task);
+                       columns.Add(x => x.Revision).Titled("Revision No.");
+                       columns.Add(x => x.GroupNo).Titled("Group No.");
+                       columns.Add(x => x.ReceivedDate).Format("{0:dd/MM/yyyy}").Titled("Received Date");
+                       columns.Add(x => x.CreatedDate).Titled("Logged in date/time");
+                       columns.Add(x => x.FetchedDate).Titled("Fetch date/time");
+                       columns.Add(x => x.Age).Titled("Age (days)");
+                       columns.Add(x => x.HandlingTime).Titled("Handling time")
+                           .Encoded(false).Sanitized(false);
+                   }).Sortable().Selectable(false)
+
+
+
+
+    </div>
+
+    <div class="container body-content">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <footer>
+            <div class="col-md-11">
+                <p align="center"> Copyright &copy; @DateTime.Now.Year | Springer Nature</p>
+            </div>
+            <div class="col-md-1">
+                <p>MS v1.0.6</p>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+<script type="text/javascript"> var AppPath = '@Url.Content("~/")' </script>
+
+

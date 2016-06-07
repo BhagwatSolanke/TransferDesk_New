@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbTransferDeskServiceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Manuscript">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JournalID" Type="int" Nullable="false" />
+          <Property Name="MSID" Type="int" Nullable="false" />
+          <Property Name="ArticleTypeID" Type="int" Nullable="false" />
+          <Property Name="SectionID" Type="int" />
+          <Property Name="ArticleTitle" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CorrespondingEditor" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="AssignedEditor" Type="nvarchar" MaxLength="200" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="RoleID" Type="int" Nullable="false" />
+          <Property Name="UserMasterID" Type="int" Nullable="false" />
+          <Property Name="Crosscheck_iThenticateResultID" Type="int" Nullable="false" />
+          <Property Name="Highest_iThenticateFromSingleSrc" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+          <Property Name="English_Lang_QualityID" Type="int" Nullable="false" />
+          <Property Name="Conclusion" Type="varchar" MaxLength="5000" />
+          <Property Name="Ethics_ComplianceID" Type="int" Nullable="false" />
+          <Property Name="TransferFrom" Type="varchar" MaxLength="200" />
+          <Property Name="ReviewerComments" Type="varchar" MaxLength="5000" />
+          <Property Name="Abstarct" Type="varchar" MaxLength="5000" />
+          <Property Name="InitialSubmissionDate" Type="datetime" Nullable="false" />
+          <Property Name="AssociateTAT" Type="datetime" />
+          <Property Name="QualityCheck" Type="bit" />
+          <Property Name="QualityStartCheckDate" Type="datetime" />
+          <Property Name="ErrorCategoryID" Type="int" />
+          <Property Name="QualityEndDate" Type="datetime" />
+          <Property Name="FinalSubmitDate" Type="datetime" />
+          <Property Name="QualityTAT" Type="datetime" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="ModifiedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="CorrespondingAuthor" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="CorrespondingAuthorEmail" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CorrespondingAuthorAff" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="iThenticatePercentage" Type="decimal" Precision="6" Scale="4" />
+          <Property Name="OverallAnalysis" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="HasTransferReport" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="dbTransferDeskServiceModelStoreContainer">
+          <EntitySet Name="Manuscript" EntityType="Self.Manuscript" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbTransferDeskServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Manuscript">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JournalID" Type="Int32" Nullable="false" />
+          <Property Name="MSID" Type="Int32" Nullable="false" />
+          <Property Name="ArticleTypeID" Type="Int32" Nullable="false" />
+          <Property Name="SectionID" Type="Int32" />
+          <Property Name="ArticleTitle" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CorrespondingEditor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AssignedEditor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RoleID" Type="Int32" Nullable="false" />
+          <Property Name="UserMasterID" Type="Int32" Nullable="false" />
+          <Property Name="Crosscheck_iThenticateResultID" Type="Int32" Nullable="false" />
+          <Property Name="Highest_iThenticateFromSingleSrc" Type="Decimal" Precision="6" Scale="4" Nullable="false" />
+          <Property Name="English_Lang_QualityID" Type="Int32" Nullable="false" />
+          <Property Name="Conclusion" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="Ethics_ComplianceID" Type="Int32" Nullable="false" />
+          <Property Name="TransferFrom" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ReviewerComments" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="Abstarct" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="InitialSubmissionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AssociateTAT" Type="DateTime" Precision="3" />
+          <Property Name="QualityCheck" Type="Boolean" />
+          <Property Name="QualityStartCheckDate" Type="DateTime" Precision="3" />
+          <Property Name="ErrorCategoryID" Type="Int32" />
+          <Property Name="QualityEndDate" Type="DateTime" Precision="3" />
+          <Property Name="FinalSubmitDate" Type="DateTime" Precision="3" />
+          <Property Name="QualityTAT" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CorrespondingAuthor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CorrespondingAuthorEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CorrespondingAuthorAff" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="iThenticatePercentage" Type="Decimal" Precision="6" Scale="4" />
+          <Property Name="OverallAnalysis" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HasTransferReport" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="dbTransferDeskServiceEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Manuscript" EntityType="Self.Manuscript" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbTransferDeskServiceModelStoreContainer" CdmEntityContainer="dbTransferDeskServiceEntities2">
+          <EntitySetMapping Name="Manuscript">
+            <EntityTypeMapping TypeName="dbTransferDeskServiceModel.Manuscript">
+              <MappingFragment StoreEntitySet="Manuscript">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="JournalID" ColumnName="JournalID" />
+                <ScalarProperty Name="MSID" ColumnName="MSID" />
+                <ScalarProperty Name="ArticleTypeID" ColumnName="ArticleTypeID" />
+                <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+                <ScalarProperty Name="ArticleTitle" ColumnName="ArticleTitle" />
+                <ScalarProperty Name="CorrespondingEditor" ColumnName="CorrespondingEditor" />
+                <ScalarProperty Name="AssignedEditor" ColumnName="AssignedEditor" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="UserMasterID" ColumnName="UserMasterID" />
+                <ScalarProperty Name="Crosscheck_iThenticateResultID" ColumnName="Crosscheck_iThenticateResultID" />
+                <ScalarProperty Name="Highest_iThenticateFromSingleSrc" ColumnName="Highest_iThenticateFromSingleSrc" />
+                <ScalarProperty Name="English_Lang_QualityID" ColumnName="English_Lang_QualityID" />
+                <ScalarProperty Name="Conclusion" ColumnName="Conclusion" />
+                <ScalarProperty Name="Ethics_ComplianceID" ColumnName="Ethics_ComplianceID" />
+                <ScalarProperty Name="TransferFrom" ColumnName="TransferFrom" />
+                <ScalarProperty Name="ReviewerComments" ColumnName="ReviewerComments" />
+                <ScalarProperty Name="Abstarct" ColumnName="Abstarct" />
+                <ScalarProperty Name="InitialSubmissionDate" ColumnName="InitialSubmissionDate" />
+                <ScalarProperty Name="AssociateTAT" ColumnName="AssociateTAT" />
+                <ScalarProperty Name="QualityCheck" ColumnName="QualityCheck" />
+                <ScalarProperty Name="QualityStartCheckDate" ColumnName="QualityStartCheckDate" />
+                <ScalarProperty Name="ErrorCategoryID" ColumnName="ErrorCategoryID" />
+                <ScalarProperty Name="QualityEndDate" ColumnName="QualityEndDate" />
+                <ScalarProperty Name="FinalSubmitDate" ColumnName="FinalSubmitDate" />
+                <ScalarProperty Name="QualityTAT" ColumnName="QualityTAT" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+                <ScalarProperty Name="CorrespondingAuthor" ColumnName="CorrespondingAuthor" />
+                <ScalarProperty Name="CorrespondingAuthorEmail" ColumnName="CorrespondingAuthorEmail" />
+                <ScalarProperty Name="CorrespondingAuthorAff" ColumnName="CorrespondingAuthorAff" />
+                <ScalarProperty Name="iThenticatePercentage" ColumnName="iThenticatePercentage" />
+                <ScalarProperty Name="OverallAnalysis" ColumnName="OverallAnalysis" />
+                <ScalarProperty Name="HasTransferReport" ColumnName="HasTransferReport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

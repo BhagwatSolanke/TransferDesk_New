@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbTransferDeskServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dbTransferDeskServiceEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="pr_GetMSDetails" />
+    <FunctionImport Name="pr_GetUserMaster" />
+    <FunctionImport Name="pr_MaxNumber">
+      <Parameter Name="TableName" Mode="In" Type="String" />
+      <Parameter Name="FieldName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pr_SearchMSDetails">
+      <Parameter Name="MSID" Mode="In" Type="Int32" />
+      <Parameter Name="JournalMasterID" Mode="In" Type="Int32" />
+      <Parameter Name="JournalTitle" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spGetReviewerDetails" ReturnType="Collection(dbTransferDeskServiceModel.spGetReviewerDetails_Result)">
+      <Parameter Name="SearchFlag" Mode="In" Type="Int32" />
+      <Parameter Name="ByTitle" Mode="In" Type="String" />
+      <Parameter Name="ByAreaOfExperties" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="spGetReviewerDetails_Result">
+    <Property Type="Int64" Name="auto" Nullable="true" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ReviewerName" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Affiliation" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="emailaddress" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Areaofexpertise" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Referencelink" Nullable="true" />
+    <Property Type="Int32" Name="Numberofrelevantpublications" Nullable="true" />
+  </ComplexType>
+</Schema>

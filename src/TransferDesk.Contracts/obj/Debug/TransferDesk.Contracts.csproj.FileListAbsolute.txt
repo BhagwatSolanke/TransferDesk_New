@@ -1,0 +1,273 @@
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\fromPawan\23-11-2015(DBChnages)\Transferdesk_afterDbChanges\ErrorCategory+DDL Chnages\Transferdesk_RadioButtonChange\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\24-11-15\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\18-12-15\Transferdesk_18122015_bugfixed\Transferdesk_AddNewRevisionVM\Transferdesk+Final on local\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Release On Live\Transferdesk+Live release(Only db change is remaining)\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT Release\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT Release\Transferdesk+MS Iteration5\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration5\Transferdesk+HTML Preview\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+HTML Preview\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk_MS_Iteration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\Manuscript Project\Admin_MSIntegration6\Final_MsIntegration6\Transferdesk+MS_Iteration6\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration6_UAT_Final\Transferdesk+MS_Iteration7\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\UAT_Release\Testing\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\SVN\TrasferDesk\Transferdesk+MS_Iteration8\Transferdesk+MS_Iteration8\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\Manuscript Project\Iteration 8_QA\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\Iteration 8_QA\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\Iteration 8_QA_UAT_Release\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\MS-Iteration-9_Integarted\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+C:\Users\rajg01\Desktop\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\SVN\TrasferDesk\MS-Iteration-10_Updated\Iteration-10\Iteration-10\MS-Iteration-10_Updated\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\MS-Iteration-10_Updated_ByDaya\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+D:\MSProject\Final UAT\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll.config
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.dll
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\TransferDesk.Contracts.pdb
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.dll
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.xml
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.dll
+C:\Users\sola05\Desktop\ManuscriptScreening\TransferDesk\src\TransferDesk.Contracts\obj\Debug\TransferDesk.Contracts.pdb

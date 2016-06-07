@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbTransferDeskServiceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MS_details_Master1">
+    <Key>
+      <PropertyRef Name="MSdetailsMasterID" />
+    </Key>
+    <Property Name="MSdetailsMasterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JournalMasterID" Type="int" Nullable="false" />
+    <Property Name="MSID" Type="int" Nullable="false" />
+    <Property Name="ArticleTypeMasterID" Type="int" />
+    <Property Name="SectionMasterID" Type="int" />
+    <Property Name="CorrespondingEditor" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="AssignedEditor" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="AssociateStartDate" Type="datetime" Nullable="false" />
+    <Property Name="RoleMasterID" Type="int" Nullable="false" />
+    <Property Name="UserMasterID" Type="int" Nullable="false" />
+    <Property Name="AuthorDetailsID" Type="int" Nullable="false" />
+    <Property Name="Crosscheck_iThenticateResult" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Highest_iThenticateResult" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="English_Lang_check" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Crosscheck_iThenticateResultComments" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="English_Lang_checkComment" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="Ethics_ComplianceComments" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="Ethics_Compliance" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TransferFrom" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="Remark" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="Abstarct" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="AnalysisResult" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="AssociateSubmissionDate" Type="datetime" Nullable="false" />
+    <Property Name="AssociateTAT" Type="datetime" Nullable="false" />
+    <Property Name="QualityCheck" Type="bit" />
+    <Property Name="QualityStartCheckDate" Type="datetime" />
+    <Property Name="ErrorCategoryMasterID" Type="int" />
+    <Property Name="QualityEndDate" Type="datetime" />
+    <Property Name="FinalSubmitDate" Type="datetime" Nullable="false" />
+    <Property Name="QualityTAT" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="dbTransferDeskServiceModelStoreContainer">
+    <EntitySet Name="MS_details_Master1" EntityType="Self.MS_details_Master1" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

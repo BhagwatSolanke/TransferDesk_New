@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbTransferDeskServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AreaOfExpertiseMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ArticleType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Data_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ReviewerName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Affiliation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="emailaddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Areaofexpertise" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Referencelink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Numberofrelevantpublications" Type="Int32" />
+    <Property Name="F9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DropDownMaster">
+    <Key>
+      <PropertyRef Name="DropDownMasterID" />
+    </Key>
+    <Property Name="DropDownMasterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DropDownText" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DropDownImagePath" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ErrorCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorCategory1" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ErrorCategoryDescription" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Journal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JournalTitle" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="JournalArticleTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JournalID" Type="Int32" Nullable="false" />
+    <Property Name="ArticleTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="JournalArticleTypes1" Relationship="Self.FK_JournalID" FromRole="JournalArticleTypes" ToRole="JournalArticleTypes1" />
+    <NavigationProperty Name="JournalArticleTypes2" Relationship="Self.FK_JournalID" FromRole="JournalArticleTypes1" ToRole="JournalArticleTypes" />
+  </EntityType>
+  <EntityType Name="JournalSections">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JournalID" Type="Int32" Nullable="false" />
+    <Property Name="SectionID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Manuscript">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JournalID" Type="Int32" Nullable="false" />
+    <Property Name="MSID" Type="Int32" Nullable="false" />
+    <Property Name="ArticleTypeID" Type="Int32" />
+    <Property Name="SectionID" Type="Int32" />
+    <Property Name="CorrespondingEditor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AssignedEditor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AssociateStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="UserMasterID" Type="Int32" Nullable="false" />
+    <Property Name="Crosscheck_iThenticateResult" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Highest_iThenticateResult" Type="Decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="English_Lang_check" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Crosscheck_iThenticateResultComments" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="English_Lang_checkComment" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ethics_ComplianceComments" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ethics_Compliance" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TransferFrom" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Abstarct" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnalysisResult" Type="Decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="AssociateSubmissionDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AssociateTAT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QualityCheck" Type="Boolean" />
+    <Property Name="QualityStartCheckDate" Type="DateTime" Precision="3" />
+    <Property Name="ErrorCategoryID" Type="Int32" />
+    <Property Name="QualityEndDate" Type="DateTime" Precision="3" />
+    <Property Name="FinalSubmitDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QualityTAT" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ManuscriptAuthors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MSID" Type="Int32" Nullable="false" />
+    <Property Name="AuthorName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Affillation" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CorrespondingAuthor" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ManuscriptID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReferenceReviewerlink">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReferenceLink" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReviewerMasterID" Type="Int32" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Reviewer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReviewerName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Affillation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NoOfPublication" Type="Int32" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Modify_dttm" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SearchByMaster">
+    <Key>
+      <PropertyRef Name="SearchByID" />
+    </Key>
+    <Property Name="SearchByID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SearchByName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Modify_dttm" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SectionName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="StatusMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="StatusCode" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="TitleMaster">
+    <Key>
+      <PropertyRef Name="TitleID" />
+    </Key>
+    <Property Name="TitleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="Modify_dttm" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserMasterID" Type="Int32" Nullable="false" />
+    <Property Name="RollID" Type="Int32" Nullable="false" />
+    <Property Name="Default" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Title_">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Modify_dttm" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Modify_dttm" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <Association Name="FK_JournalID">
+    <End Role="JournalArticleTypes" Type="Self.JournalArticleTypes" Multiplicity="1" />
+    <End Role="JournalArticleTypes1" Type="Self.JournalArticleTypes" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="JournalArticleTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="JournalArticleTypes1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbTransferDeskServiceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AreaOfExpertiseMaster" EntityType="Self.AreaOfExpertiseMaster" />
+    <EntitySet Name="ArticleType" EntityType="Self.ArticleType" />
+    <EntitySet Name="Data_" EntityType="Self.Data_" />
+    <EntitySet Name="DropDownMaster" EntityType="Self.DropDownMaster" />
+    <EntitySet Name="ErrorCategory" EntityType="Self.ErrorCategory" />
+    <EntitySet Name="Journal" EntityType="Self.Journal" />
+    <EntitySet Name="JournalArticleTypes" EntityType="Self.JournalArticleTypes" />
+    <EntitySet Name="JournalSections" EntityType="Self.JournalSections" />
+    <EntitySet Name="Manuscript" EntityType="Self.Manuscript" />
+    <EntitySet Name="ManuscriptAuthors" EntityType="Self.ManuscriptAuthors" />
+    <EntitySet Name="ReferenceReviewerlink" EntityType="Self.ReferenceReviewerlink" />
+    <EntitySet Name="Reviewer" EntityType="Self.Reviewer" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
+    <EntitySet Name="SearchByMaster" EntityType="Self.SearchByMaster" />
+    <EntitySet Name="Section" EntityType="Self.Section" />
+    <EntitySet Name="StatusMaster" EntityType="Self.StatusMaster" />
+    <EntitySet Name="TitleMaster" EntityType="Self.TitleMaster" />
+    <EntitySet Name="UserMaster" EntityType="Self.UserMaster" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" />
+    <EntitySet Name="Title_" EntityType="Self.Title_" />
+    <AssociationSet Name="FK_JournalID" Association="Self.FK_JournalID">
+      <End Role="JournalArticleTypes" EntitySet="JournalArticleTypes" />
+      <End Role="JournalArticleTypes1" EntitySet="JournalArticleTypes" />
+    </AssociationSet>
+    <FunctionImport Name="pr_GetMSDetails" />
+    <FunctionImport Name="pr_GetUserMaster" />
+    <FunctionImport Name="pr_MaxNumber">
+      <Parameter Name="TableName" Mode="In" Type="String" />
+      <Parameter Name="FieldName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pr_SearchMSDetails">
+      <Parameter Name="MSID" Mode="In" Type="Int32" />
+      <Parameter Name="JournalMasterID" Mode="In" Type="Int32" />
+      <Parameter Name="JournalTitle" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,615 @@
+﻿@model TransferDesk.Services.Manuscript.ViewModel.ManuscripScreeningVM
+@using MvcCheckBoxList.Model
+@{
+    ViewBag.Title = "Home Page";
+}
+<link type="text/css" rel="Stylesheet"
+      href="http://ajax.microsoft.com/ajax/jquery.ui/1.8.6/themes/
+smoothness/jquery-ui.css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/jquery.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/ExternalScript/jquery.ddslick.min.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+<br />
+<br />
+<br />
+@Html.Raw(TempData["MSIDError"])
+@Html.Raw(TempData["msg"])
+@using (Html.BeginForm("HomePage", "Manuscript", new { id = "frmHomePage" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.ID, new { id = "dbID" })
+    <table width="100%">
+        <tr>
+            <td width="168px">
+                Start Date
+            </td>
+            <td width="214px">
+                @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control input-sm", placeholder = "dd/mm/yyyy", @readonly = "readonly " })
+            </td>
+            <td align="right" colspan="2" width="356px">
+
+                @*@Html.DisplayFor(x => x.UserID)*@
+                @System.Web.HttpContext.Current.User.Identity.Name.Replace("SPRINGER-SBM\\", "")
+
+                @Html.HiddenFor(x => x.UserID)
+                @Html.Hidden("hdnUserID",@System.Web.HttpContext.Current.User.Identity.Name.Replace("SPRINGER-SBM\\", ""))
+                @*@Html.HiddenFor(x => x.UserID, new { Value = @System.Web.HttpContext.Current.User.Identity.Name.Replace("SPRINGER-SBM\\", "") })*@
+                @*@Html.HiddenFor(x=>x.QualityUserID)*@
+            </td>
+            <td align="right" width="172px">
+                Role&nbsp;&nbsp;&nbsp;
+            </td>
+            <td align="right" width="210px">
+                @Html.DropDownListFor(x => x.RoleID, new SelectList(ViewBag.RoleList, "ID", "RoleName"), new { @class = "form-control input-sm", id = "ddlRole" })
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <div class="titles"><span><b>Manuscript Details</b></span></div>
+    <table class=" tWidth lastTDAlign ManuscriptDetails">
+        <tr>
+            <td>
+                Journal Title
+                <span class="asterik">* </span>
+            </td>
+            <td>
+                @Html.DropDownListFor(x => x.JournalID, new SelectList(ViewBag.JournalList, "ID", "JournalTitle"), "Select-Journal Title", new { @class = "form-control input-sm", id = "ddlJournalTitle" })
+
+            </td>
+            <td>
+                <span>
+                    Article Type
+                    <span class="asterik">*</span>
+                </span>
+            </td>
+            <td>
+               
+                @Html.DropDownListFor(x => x.ArticleTypeID, new SelectList(ViewBag.ArticleList, "ID", "ArticleTypeName"), "Select-ArticleType", new { @class = "form-control input-sm", id = "ddlArticleType" })
+            </td>
+            <td>
+                <span>Section</span>
+            </td>
+            <td>
+            
+                @Html.DropDownListFor(x => x.SectionID, new SelectList(ViewBag.SectionList, "ID", "SectionName"), "Select-Section", new { @class = "form-control input-sm", id = "ddlSectionType" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Manuscript Number
+                <span class="asterik">*</span>
+
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.MSID, new { @class = "form-control input-sm", placeholder = "Enter Manuscript Number" })
+            </td>
+            <td>
+                <span>Article Title<span class="asterik">*</span> </span>
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.ArticleTitle, new { @class = "form-control input-sm", placeholder = "Enter Article Title" })
+            </td>
+            <td>
+                <span>
+                    Initial Date Submitted
+                    <span class="asterik">*</span>
+                </span>
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.InitialSubmissionDate, new { @class = "form-control input-sm datepicker", placeholder = "dd/mm/yyyy" })
+
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <div class="titles"><span><b>Author(s)/Editor(s) Details</b></span></div>
+    <table class="tWidth">
+        <tr>
+            <td>
+                Corresponding Author<span class="asterik">*</span>
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.CorrespondingAuthor, new { @class = "form-control input-sm", placeholder = "Enter Corresponding Author" })
+
+            </td>
+            <td>
+                <span>Corresponding Author Email<span class="asterik">*</span> </span>
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.CorrespondingAuthorEmail, new { @class = "form-control input-sm", placeholder = "Enter Corresponding Email" })
+
+            </td>
+            <td colspan="2">
+
+                <span>Corr. Author affiliation<span class="asterik">*</span></span>
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.CorrespondingAuthorAff, new { @class = "form-control input-sm", placeholder = "Enter Author affiliation" })
+
+
+            </td>
+        </tr>
+        <tr>
+            <td>Other Author(s)</td>
+            <td colspan="3">
+                <div id="dvOtherAuthor">
+                    <table id=" tblotherauthors" class="table table-bordered" style="width:100%;padding:0px;">
+                      
+                        <tbody id="tblOtherAuthorsbody">
+                          
+                            @for (var i = 0; i < Model.OtherAuthors.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.HiddenFor(x => x.OtherAuthors[i].ID)
+                                        @Html.TextBoxFor(x => x.OtherAuthors[i].AuthorName, new { style = "width:100%;", @class = "form-control input-sm" })
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBoxFor(x => x.OtherAuthors[i].Affillation, new { style = "width:100%;", @class = "form-control input-sm" })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </td>
+            <td colspan="2" style="padding-left:1.4em;vertical-align: middle;">
+                Corresponding Editor<span class="asterik">*</span>
+            </td>
+            <td style="float:inherit">
+                <span style="float:right">
+                    @Html.TextBoxFor(x => x.CorrespondingEditor, new { @class = "form-control input-sm", placeholder = "Enter Corresponding Editor" })
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td width="168px"></td>
+            <td colspan="3">
+                <div style="display:inline-flex">
+                    <input type="text" id="txtOtherAuhtorName" class="form-control input-sm" placeholder="Enter other Author Name" />
+                    <input type="text" id="txtAuthorAffilation" class="form-control input-sm" placeholder="Enter other Author affiliation" />
+                    <input type="button" id="btnAddotherAuthor" value="+" class="btn btn-primary btn-sm textSize">
+                </div>
+            </td>
+
+            <td colspan="2" align="right" style="padding-left:1.4em">
+                Assigned Editor
+            </td>
+            <td style="float:inherit">
+                <span style="float:right">@Html.TextBoxFor(x => x.AssignedEditor, new { @class = "form-control input-sm", placeholder = "Enter Assigned Editor" })</span>
+            </td>
+        </tr>
+    </table>
+    @Html.ValidationSummary("Following fields are mandatory:", new { @class = "alert alert-danger" })
+    <hr />
+
+    <div class="titles"><span><b>Analytical Findings</b></span></div>
+    <table class="tWidth">
+        <tr>
+            <td><span>iThenticate %</span></td>
+            <td>
+                @Html.TextBoxFor(x => x.iThenticatePercentage, new { @class = "form-control input-sm", placeholder = "Enter iThenticate %" })
+            </td>
+            <td>
+                <span>Highest iThenticate % from a single source</span>
+                <span class="asterik">*</span>
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Highest_iThenticateFromSingleSrc, new { @class = "form-control input-sm", placeholder = "Enter highest iThenticate % from single source" })
+            </td>
+            <td>
+                <span>Cross Check/iThenticate result</span>
+                <span class="asterik">*</span>
+            </td>
+            <td style="text-align:left">
+                @* dropdownlist for ithenticate result with images *@
+                <div id="ddliThenticateResult">
+                </div>
+                @Html.TextBoxFor(x => x.Crosscheck_iThenticateResultID, new { id = "hdniThenticateResult", style = "Display:None" })                
+                @Html.Hidden("Crosscheck_iThenticateResultID1", "", new { id = "hdniThenticateResult1" })
+                <input type="hidden" id="hdniThenticate" value="@Model.Crosscheck_iThenticateResultID" />
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <span>English language Quality</span>
+                <span class="asterik">*</span>
+            </td>
+            <td>
+                <div id="ddlEnglishlangQuality">
+                </div>
+                @Html.TextBoxFor(x => x.English_Lang_QualityID, new { id = "hdnEnglishlangQuality", style = "Display:None" })
+                @*@Html.HiddenFor(x => x.English_Lang_QualityID, new { id = "hdnEnglishlangQuality" })*@
+                @Html.Hidden("English_Lang_QualityID1", "", new { id = "hdnEnglishlangQuality1" })
+                <input type="hidden" id="hdnEnglishlang" value="@Model.English_Lang_QualityID" />
+            </td>
+            <td>
+                <span>Ethics Complience</span>
+                <span class="asterik">*</span>
+            </td>
+            <td>
+                <div id="ddlEthicsComplience">
+                </div>
+                @* Displaying error *@
+                @Html.TextBoxFor(x => x.Ethics_ComplianceID, new { id = "hdnEthicsComplience", style = "Display:None" })
+                <input type="hidden" id="hdnEthics" value="@Model.Ethics_ComplianceID" />
+                @Html.Hidden("Ethics_ComplianceID1", "", new { id = "hdnEthicsComplience1" })
+            </td>
+            <td>
+                <span>Overall Analysis</span>
+                <span class="asterik">*</span>
+            </td>
+            <td disabled='true'>
+                <div id="ddlOverallAnalysis">
+                </div>
+                @Html.TextBoxFor(x => x.OverallAnalysisID, new { style = "Display:None" })
+                <input type="hidden" id="hdnOverallAnalysis" value="@Model.OverallAnalysisID" />
+                @Html.Hidden("OverallAnalysisID", "", new { id = "hdnOverallAnalysis1" })
+                @*@Html.TextBoxFor(x => x.OverallAnalysis, new { @class = "form-control input-sm", placeholder = "Overall Analysis", @readonly = "readonly" })*@
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Transfer Report</span>
+            </td>
+            <td>
+                @Html.DropDownListFor(x => x.HasTransferReport, new SelectList(new List<Object>{
+                       new { value = "True" , text = "No"  },
+                       new { value = "false" , text = "Yes" }
+                    }, "value", "text"), new { @class = "form-control input-sm", id = "ddlTransferReport" })
+            </td>
+            <td colspan="3">
+                <input type="button" id="btnTransferReportClick" value="View Transfer Report" data-target="#TransferReportModal" class="btn btn-primary btn-sm" disabled />
+                <div id="TransferReportModal" class="modal fade modal-wide" tabindex='-1' data-backdrop="static" data-toggle="modal" data-dismiss="modal">
+                    <div class=" modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Transfer Report
+                                <button type="button" class="close" data-dismiss="modal" name="ClosePopup" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div style="display:flex;float:left;margin-bottom: 10px;" >
+                                                <span style="width:150px" >Transfer From</span>
+                                                <span >
+                                                    @Html.TextBoxFor(x => x.TransferFrom, new { @class = "form-control input-sm ", placeholder = "Enter Transfer From" })
+                                                </span>
+                                            </div>
+                                            <div style="display:flex;float:left">
+                                                <span style="width:150px">Reviewer's Comments</span>
+                                                
+                                                @Html.TextAreaFor(x => x.ReviewerComments, new { cols = "50", style = "overflow-y: scroll;", @class = "mceEditor1" })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-7">
+                                            <div style="display:flex;float:left;margin-bottom: 10px;">
+                                                <span style="width:145px;padding-left:30px">Abstract</span>
+                                                @Html.TextAreaFor(x => x.Abstarct, new { cols = "50", style = "overflow-y: scroll;", @class = "mceEditor" })
+                                            </div>
+                                            <div style="display:flex;float:left">
+                                                <span style="width:145px; padding-left:30px">Last Paragraph/ Conclusion</span>
+                                                @Html.TextAreaFor(x => x.Conclusion, new { cols = "50", style = "overflow-y: scroll;", @class = "mceEditor" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnTransferReportSaveSubmit" class="btn btn-default btn-sm">Ok</button>
+                                @*<button type="button" class="btn btn-default btn-sm" data-dismiss="modal" name="ClosePopup">Close</button>*@
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+            </td>
+            <td align="right">
+                <input type="submit" id="btnAssociateSaveSubmit" value="Save and Submit" class="btn btn-primary btn-sm" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div>Manuscript Screening Mandatory Fields<span class="asterik">*</span></div>
+
+    <hr id="hrUpQualityAnalyst" />
+    <div id="divQualityAnalyst" style="display:none" width="100%">
+        <div class="titles"><span><b>Quality Analyst</b></span></div>
+        <table width="100%">
+            <tr>
+                <td width="168px">
+                    <span>Quality Check</span>
+                </td>
+                <td width="214px">
+                    @Html.DropDownListFor(x => x.QualityCheck, new SelectList(new List<Object>{
+                       new { value = "True" , text = "No"  },
+                       new { value = "False" , text = "Yes" }
+                    }, "value", "text"), new { @class = "form-control input-sm" })
+                </td>
+                <td align="right" width="154px">
+                    <span>Quality Check Date</span>
+                </td>
+                <td width="214px" style="padding-left:1.6em">
+                    @Html.TextBoxFor(x => x.QualityStartCheckDate, new { @class = "form-control input-sm", placeholder = "dd/mm/yyyy" })
+                </td>
+                <td align="center" width="175px">
+                    <span>Accurate</span>
+                </td>
+                <td style="float:right" width="210">
+                    @*@Html.TextBoxFor(x => x.Accurate, new { @class = "form-control input-sm", placeholder = "Enter Accurate" })*@
+                    @Html.DropDownListFor(x => x.Accurate, new SelectList(new List<Object>{
+                       new { value = "No" , text = "No"  },
+                       new { value = "Yes" , text = "Yes" }
+                    }, "value", "text"), new { @class = "form-control input-sm", id = "ddlAccurate" })
+                </td>
+            </tr>
+            <tr>
+                <td width="168px" align="left">
+                    <span>Error Category</span>
+                </td>
+                <td width="214px">
+                    <div id="ListManuscriptErrorCategoriesVM">
+                        <table>
+                            @for (var i = 0; i < Model.ListManuscriptErrorCategoriesVM.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.HiddenFor(x => x.ListManuscriptErrorCategoriesVM[i].ID)
+                                        @Html.HiddenFor(x => x.ListManuscriptErrorCategoriesVM[i].ErrorCategoryID)
+                                        @Html.CheckBoxFor(x => x.ListManuscriptErrorCategoriesVM[i].IsSelected, new {@class="chkQualityCheck" })
+                                    </td>
+                                    <td>@Html.DisplayFor(x => x.ListManuscriptErrorCategoriesVM[i].ErrorCategoryName)</td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                </td>
+                <td align="center" width="154px">
+                    <span style="padding-left: 1em;"> Error Description  </span>
+                </td>
+                <td colspan="2" align="left" style="padding-left:1.6em">
+                    @Html.TextAreaFor(x => x.ErrorDescription, new { cols = "50" })
+                </td>
+                <td align="right" style="vertical-align:bottom">
+                    <input type="submit" id="btnQualitySubmit" value="Save and Submit" class="btn btn-primary btn-sm" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+}
+<script src="~/Scripts/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        try
+        {
+            var ddlIthenticateResult=@Html.Raw(ViewBag.iThenticateResult);
+            var ddlEnglishlangQuality=@Html.Raw(ViewBag.EnglishLangQuality);
+            var ddlEthicsComplience=@Html.Raw(ViewBag.EthicsComplience);
+            var ddlOverallAnalysis=@Html.Raw(ViewBag.OverallAnalysis);
+            addIthenticateResult(ddlIthenticateResult);
+            addEnglishlangQuality(ddlEnglishlangQuality);
+            addEthicsComplience(ddlEthicsComplience);
+            addOverallAnalysis(ddlOverallAnalysis);
+            $('.dd-select').height(30).css({"vertical-align":"top","border-radius": "3px"});
+            $('.dd-select').css("background","");
+            $(".dd-selected-text").css({"line-height":"20px"});
+            $(".dd-option-text").css({"line-height":"20px"});
+            $(".dd-selected").css({"padding":"5px","display":"inline"});
+            $('.dd-option').height(18);
+            $('.dd-option').css({"padding-right":"1px"});
+            $(".dd-image-right").css({"margin-right":"1px"});
+            $('.dd-select').css({"height":"30px","width":"208"});
+            $(".dd-options.dd-click-off-close").css({"width":"208"});
+            $(".dd-container").css({"width":"208"});
+            $('#ddlOverallAnalysis').css({"pointer-events": "none"});
+    //first time loading binding
+            //$('#ddliThenticateResult').ddslick('select', {index:$('#hdniThenticate').val()});
+            $('#ddliThenticateResult li').each(function( index ) {
+                var currs = $( this ).find('.dd-option-value').val();
+                if(currs == $('#hdniThenticate').val())
+                {
+                    $('#ddliThenticateResult').ddslick('select', {index: $(this).index()});
+                }
+            });
+
+
+            $('#ddlEnglishlangQuality li').each(function( index ) {
+                var currs = $( this ).find('.dd-option-value').val();
+                if(currs == $('#hdnEnglishlang').val())
+                {
+                    $('#ddlEnglishlangQuality').ddslick('select', {index: $(this).index()});
+                }
+            });
+
+            $('#ddlEthicsComplience li').each(function( index ) {
+                var currs = $( this ).find('.dd-option-value').val();
+                if(currs == $('#hdnEthics').val())
+                {
+                    $('#ddlEthicsComplience').ddslick('select', {index: $(this).index()});
+                }
+            });
+            $('#ddlOverallAnalysis li').each(function( index ) {
+                var currs = $( this ).find('.dd-option-value').val();
+                if(currs == $('#hdnOverallAnalysis').val())
+                {
+                    $('#ddlOverallAnalysis').ddslick('select', {index: $(this).index()});
+                }
+            });
+
+           // $('#ddlEnglishlangQuality').ddslick('select', {index:$('#ddlEnglishlangQuality li:has(.dd-option-value:contains("'+$('#hdnEnglishlang').val()+'"))').index()});
+            
+            //$('#ddlEthicsComplience').ddslick('select', {index:$('#hdnEthics').val()});
+            //$('#ddlOverallAnalysis').ddslick('select', {index:$('#hdnOverallAnalysis').val()});
+
+            
+        }
+        catch(error)
+        {
+        }
+    });
+
+
+
+    function addIthenticateResult(ddlData)
+    {
+        var dataddl=[];
+        var data;
+        for(var index=0;index<=ddlData.length-1;index++)
+        {
+            dataddl.push({
+                text:ddlData[index].DropDownText,
+                value:ddlData[index].ID,
+               // imageSrc:"/TransferDeskService/Images/"+ddlData[index].ImageName+".bmp"
+             //   imageSrc:"/ManuscriptScreening/Images/"+ddlData[index].ImageName+".bmp"
+                imageSrc:"/Images/"+ddlData[index].ImageName+".bmp"
+            });
+        }
+        $('#ddliThenticateResult').ddslick({
+            data: dataddl,
+            width: 230,
+            //selectText:"Select-iThenticateResult",
+            imagePosition: "right",
+            onSelected: function (selectedData) {
+                //callback function: do something with selectedData;
+                $('#hdniThenticateResult').val(selectedData.selectedData.value);
+                $('#hdniThenticateResult1').val(selectedData.selectedIndex);
+                $(".dd-image-right").css({"margin-right":"1px"});
+                CalculateMatrixLegend();
+            }
+        });
+
+    }
+
+    function addEnglishlangQuality(ddlData)
+    {
+        var dataddl=[];
+        var data;
+        for(var index=0;index<=ddlData.length-1;index++)
+        {
+            dataddl.push({
+                text:ddlData[index].DropDownText,
+                value:ddlData[index].ID,
+                // imageSrc:"/TransferDeskService/Images/"+ddlData[index].ImageName+".bmp"
+                //imageSrc:"/ManuscriptScreening/Images/"+ddlData[index].ImageName+".bmp"
+                imageSrc:"/Images/"+ddlData[index].ImageName+".bmp"
+            });
+        }
+        $('#ddlEnglishlangQuality').ddslick({
+            data: dataddl,
+            width: 230,
+            //selectText:"Select-EnglishlangQuality",
+            imagePosition: "right",
+            onSelected: function (selectedData) {
+                //callback function: do something with selectedData;
+                $('#hdnEnglishlangQuality').val(selectedData.selectedData.value);
+                $('#hdnEnglishlangQuality1').val(selectedData.selectedIndex);
+                $(".dd-image-right").css({"margin-right":"1px"});
+                CalculateMatrixLegend();
+            }
+        });
+
+    }
+
+    function addEthicsComplience(ddlData)
+    {
+        //{
+        //    text: "Select-Ethics",
+        //    value: 0,
+        //    selected: false,
+        //    imageSrc: "/Images/Arrow-down.bmp"
+        //}
+        var dataddl=[];
+        var data;
+        for(var index=0;index<=ddlData.length-1;index++)
+        {
+            dataddl.push({
+                text:ddlData[index].DropDownText,
+                value:ddlData[index].ID,
+                //imageSrc:"/TransferDeskService/Images/"+ddlData[index].ImageName+".bmp"
+                //imageSrc:"/ManuscriptScreening/Images/"+ddlData[index].ImageName+".bmp"
+                imageSrc:"/Images/"+ddlData[index].ImageName+".bmp"
+            });
+        }
+        $('#ddlEthicsComplience').ddslick({
+            data: dataddl,
+            width: 230,
+            //selectText:"Select-EthicsComplience",
+            imagePosition: "right",
+            onSelected: function (selectedData) {
+                //callback function: do something with selectedData;
+                $('#hdnEthicsComplience').val(selectedData.selectedData.value);
+                $('#hdnEthicsComplience1').val(selectedData.selectedIndex);
+                $(".dd-image-right").css({"margin-right":"1px"});
+                CalculateMatrixLegend();
+            }
+        });
+    }
+
+    function  addOverallAnalysis(ddlData)
+    {
+        var dataddl=[{
+            text: "",
+            value: 0,
+            selected: false,
+        }];
+        var data;
+        for(var index=0;index<=ddlData.length-1;index++)
+        {
+            dataddl.push({
+                text:ddlData[index].DropDownText,
+                value:ddlData[index].ID,
+               //imageSrc:"/TransferDeskService/Images/"+ddlData[index].ImageName+".bmp"
+                //imageSrc:"/ManuscriptScreening/Images/"+ddlData[index].ImageName+".bmp"
+                imageSrc:"/Images/"+ddlData[index].ImageName+".bmp"
+            });
+        }
+        $('#ddlOverallAnalysis').ddslick({
+            data: dataddl,
+            width: 230,
+            imagePosition: "right",
+            onSelected: function (selectedData) {
+                $('#OverallAnalysisID').val(selectedData.selectedData.value);
+                $('#hdnOverallAnalysis1').val(selectedData.selectedData.value);
+                $(".dd-image-right").css({"margin-right":"1px"});
+            }
+        });
+    }
+
+
+    function CalculateMatrixLegend()
+    {
+        var iThenticateResult= $('#hdniThenticateResult1').val();
+        var EnglishlangQualityId=$('#hdnEnglishlangQuality1').val();
+        var EthicsComplienceId= $('#hdnEthicsComplience1').val();
+        if(iThenticateResult==0||EnglishlangQualityId==0||EthicsComplienceId==0)
+            $('#ddlOverallAnalysis').ddslick('select', {index:0});
+        else if(iThenticateResult==1||EnglishlangQualityId==1||EthicsComplienceId==1)
+            $('#ddlOverallAnalysis').ddslick('select', {index:1});
+        else if(iThenticateResult==2||EnglishlangQualityId==2||EthicsComplienceId==2)
+            $('#ddlOverallAnalysis').ddslick('select', {index:2});
+        else if(EthicsComplienceId==4)
+            $('#ddlOverallAnalysis').ddslick('select', {index:4});
+        else if(EthicsComplienceId==3)
+            $('#ddlOverallAnalysis').ddslick('select', {index:3});
+        else
+            $('#ddlOverallAnalysis').ddslick('select', {index:3});
+    }
+
+</script>
+<script src="~/Scripts/CustomeScript/SearchScript.js"></script>

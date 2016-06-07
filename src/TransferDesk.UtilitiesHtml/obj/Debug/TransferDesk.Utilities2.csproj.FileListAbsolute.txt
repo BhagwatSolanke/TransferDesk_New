@@ -1,0 +1,12 @@
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\TransferDesk.Utilities2.dll
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\TransferDesk.Utilities2.pdb
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlAgilityPack.dll
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlToOpenXml.dll
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlAgilityPack.pdb
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlAgilityPack.xml
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\bin\Debug\HtmlToOpenXml.pdb
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\obj\Debug\TransferDesk.Utilities2.csprojResolveAssemblyReference.cache
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\obj\Debug\TransferDesk.Utilities2.dll
+D:\Transferdesk\TransferDesk.Utilities2\TransferDesk.Utilities2\obj\Debug\TransferDesk.Utilities2.pdb
